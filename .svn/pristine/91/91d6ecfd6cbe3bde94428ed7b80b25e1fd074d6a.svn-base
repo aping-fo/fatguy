@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1</id>
+	<stage>1</stage>
+	<consumeCalories>0</consumeCalories>
+</config>
+<config>
+	<id>2</id>
+	<stage>2</stage>
+	<consumeCalories>4500</consumeCalories>
+</config>
+<config>
+	<id>3</id>
+	<stage>3</stage>
+	<consumeCalories>10500</consumeCalories>
+</config>
+<config>
+	<id>4</id>
+	<stage>4</stage>
+	<consumeCalories>22500</consumeCalories>
+</config>
+<config>
+	<id>5</id>
+	<stage>5</stage>
+	<consumeCalories>45000</consumeCalories>
+</config>
+<config>
+	<id>6</id>
+	<stage>6</stage>
+	<consumeCalories>72000</consumeCalories>
+</config>
+<config>
+	<id>7</id>
+	<stage>7</stage>
+	<consumeCalories>105000</consumeCalories>
+</config>
+<config>
+	<id>8</id>
+	<stage>8</stage>
+	<consumeCalories>132000</consumeCalories>
+</config>
+<config>
+	<id>9</id>
+	<stage>9</stage>
+	<consumeCalories>150000</consumeCalories>
+</config>
+<config>
+	<id>10</id>
+	<stage>10</stage>
+	<consumeCalories>225000</consumeCalories>
+</config>
+</root>

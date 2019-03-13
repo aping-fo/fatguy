@@ -1,0 +1,38 @@
+package com.game.domain.player;
+
+/**
+ * Created by lucky on 2019/3/12.
+ * 玩家相关数据相关
+ */
+public class PlayerData {
+
+    private String iconUrl;
+
+    private int todayTransStep;
+
+    private long signTime;
+
+    public String getIconUrl() {
+        return iconUrl;
+    }
+
+    public void setIconUrl(String iconUrl) {
+        this.iconUrl = iconUrl;
+    }
+
+    public int getTodayTransStep() {
+        return todayTransStep;
+    }
+
+    public void setTodayTransStep(int todayTransStep) {
+        this.todayTransStep = todayTransStep;
+    }
+
+    public long getSignTime() {
+        return signTime;
+    }
+
+    public void setSignTime(long signTime) {
+        this.signTime = signTime;
+    }
+}

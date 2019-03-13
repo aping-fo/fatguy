@@ -1,0 +1,85 @@
+package com.game.domain.player;
+
+import com.game.domain.bag.Bag;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by lucky on 2019/3/12.
+ * 玩家相关数据相关
+ */
+public class PlayerData {
+
+    private String iconUrl;
+
+    private int todayTransStep;
+
+    private long signTime;
+
+    /**
+     * 抽奖劵
+     */
+    private int ticket;
+    /**
+     * 卡路里
+     */
+    private int calorie;
+    /**
+     * 好友来访记录
+     */
+    private List<PlayerVisiter> playerVisiters = new ArrayList<>();
+
+    /**
+     * 背包
+     */
+    private Bag bag = new Bag();
+
+    public int getCalorie() {
+        return calorie;
+    }
+
+    public void setCalorie(int calorie) {
+        this.calorie = calorie;
+    }
+
+    public Bag getBag() {
+        return bag;
+    }
+
+    public void setBag(Bag bag) {
+        this.bag = bag;
+    }
+
+    public List<PlayerVisiter> getPlayerVisiters() {
+        return playerVisiters;
+    }
+
+    public void setPlayerVisiters(List<PlayerVisiter> friendVisiters) {
+        this.playerVisiters = friendVisiters;
+    }
+
+    public String getIconUrl() {
+        return iconUrl;
+    }
+
+    public void setIconUrl(String iconUrl) {
+        this.iconUrl = iconUrl;
+    }
+
+    public int getTodayTransStep() {
+        return todayTransStep;
+    }
+
+    public void setTodayTransStep(int todayTransStep) {
+        this.todayTransStep = todayTransStep;
+    }
+
+    public long getSignTime() {
+        return signTime;
+    }
+
+    public void setSignTime(long signTime) {
+        this.signTime = signTime;
+    }
+}

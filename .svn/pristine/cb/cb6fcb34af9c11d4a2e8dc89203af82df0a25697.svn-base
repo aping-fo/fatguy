@@ -1,0 +1,34 @@
+package com.game.domain.bag;
+
+/**
+ * Created by lucky on 2019/3/13.
+ */
+public class ItemEffect {
+
+    /**
+     * 产生效果的道具
+     */
+    private int itemId;
+
+    /**
+     * cd开始时间
+     */
+    private int cdStart;
+
+
+    public int getItemId() {
+        return itemId;
+    }
+
+    public void setItemId(int itemId) {
+        this.itemId = itemId;
+    }
+
+    public int getCdStart() {
+        return cdStart;
+    }
+
+    public void setCdStart(int cdStart) {
+        this.cdStart = cdStart;
+    }
+}

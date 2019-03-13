@@ -1,0 +1,61 @@
+package com.game.domain.bag;
+
+import com.game.domain.player.Player;
+
+/**
+ * Created by lucky on 2019/3/12.
+ */
+public class Item {
+    private int id;
+    //配置ID
+    private int configId;
+
+    private int count;
+    /**
+     * 创建时间
+     */
+    private long createTime;
+
+
+
+    public long getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(long createTime) {
+        this.createTime = createTime;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public int getConfigId() {
+        return configId;
+    }
+
+    public void setConfigId(int configId) {
+        this.configId = configId;
+    }
+
+
+    /**
+     * 道具使用
+     * @param player
+     */
+    public void useItem(Player player){
+
+    }
+}

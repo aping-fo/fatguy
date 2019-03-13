@@ -1,0 +1,60 @@
+package com.game.service;
+
+import com.game.data.ToolCfg;
+import com.game.domain.bag.Bag;
+import com.game.domain.bag.Item;
+import com.game.domain.player.Player;
+import com.game.sdk.net.Result;
+import com.game.sdk.utils.ErrorCode;
+import com.game.util.ConfigData;
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+/**
+ * Created by lucky on 2019/3/13.
+ * 背包道具管理
+ */
+@Service
+public class BagService {
+    private static Logger logger = Logger.getLogger(BagService.class);
+
+    @Autowired
+    private PlayerService playerService;
+
+    /**
+     * 增加道具
+     *
+     * @param openid
+     * @param itemId
+     * @param count
+     */
+    public void addItem(String openid, int itemId, int count) {
+        Player player = playerService.getPlayer(openid);
+        Bag bag = player.getPlayerDataObject().getBag();
+        ToolCfg config = ConfigData.getConfig(ToolCfg.class, itemId);
+
+        bag.addItem(config, count);
+    }
+
+    /**
+     * 使用道具
+     *
+     * @param openid
+     * @param id
+     * @param count
+     */
+    public Result useItem(String openid, int id, int count) {
+        Player player = playerService.getPlayer(openid);
+        Bag bag = player.getPlayerDataObject().getBag();
+
+        Item item = bag.getById(id);
+        if (item == null) {
+            return Result.valueOf(ErrorCode.ITEM_NOT_EXIST);
+        }
+
+        item.useItem(player);
+        return Result.valueOf(ErrorCode.OK);
+    }
+
+}

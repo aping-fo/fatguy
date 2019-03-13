@@ -1,0 +1,60 @@
+package com.game.domain.bag;
+
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
+/**
+ * Created by lucky on 2019/3/12.
+ */
+public class Bag {
+
+    private ConcurrentHashMap<Integer, Item> bag = new ConcurrentHashMap<>();
+
+
+    public ConcurrentHashMap<Integer, Item> getBag() {
+        return bag;
+    }
+
+    public void setBag(ConcurrentHashMap<Integer, Item> bag) {
+        this.bag = bag;
+    }
+
+    public Item addItem(int id, int count) {
+        Item item = bag.get(id);
+        if (item == null) {
+            item = new Item();
+            bag.put(id, item);
+        }
+
+        item.setCount(item.getCount() + count);
+
+        return item;
+    }
+
+
+    public boolean checkEnough(int id, int count) {
+        Item item = bag.get(id);
+        if (item == null) {
+            return false;
+        }
+
+        if (item.getCount() < count) {
+            return false;
+        }
+        return true;
+    }
+
+    public boolean checkAndRemoveCount(int id, int count) {
+        Item item = bag.get(id);
+        if (item == null) {
+            return false;
+        }
+
+        if (item.getCount() < count) {
+            return false;
+        }
+
+        item.setCount(item.getCount() - count);
+        return true;
+    }
+}

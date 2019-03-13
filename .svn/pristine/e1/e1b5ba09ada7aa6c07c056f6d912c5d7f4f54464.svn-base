@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1001</id>
+	<needStep>1000</needStep>
+	<maxCount>2</maxCount>
+	<reward></reward>
+	<title>5倍接力长征</title>
+	<icon>1001</icon>
+</config>
+<config>
+	<id>1002</id>
+	<needStep>1001</needStep>
+	<maxCount>2</maxCount>
+	<reward></reward>
+	<title>5倍接力长征</title>
+	<icon>1002</icon>
+</config>
+<config>
+	<id>1003</id>
+	<needStep>1002</needStep>
+	<maxCount>2</maxCount>
+	<reward></reward>
+	<title>5倍接力长征</title>
+	<icon>1003</icon>
+</config>
+<config>
+	<id>1004</id>
+	<needStep>1003</needStep>
+	<maxCount>1</maxCount>
+	<reward></reward>
+	<title>mini长征</title>
+	<icon>1004</icon>
+</config>
+<config>
+	<id>1005</id>
+	<needStep>1004</needStep>
+	<maxCount>1</maxCount>
+	<reward></reward>
+	<title>mini长征</title>
+	<icon>1005</icon>
+</config>
+<config>
+	<id>1006</id>
+	<needStep>1005</needStep>
+	<maxCount>1</maxCount>
+	<reward></reward>
+	<title>mini长征</title>
+	<icon>1006</icon>
+</config>
+<config>
+	<id>1007</id>
+	<needStep>1006</needStep>
+	<maxCount>2</maxCount>
+	<reward></reward>
+	<title>接力长征</title>
+	<icon>1007</icon>
+</config>
+<config>
+	<id>1008</id>
+	<needStep>1007</needStep>
+	<maxCount>2</maxCount>
+	<reward></reward>
+	<title>接力长征</title>
+	<icon>1008</icon>
+</config>
+<config>
+	<id>1009</id>
+	<needStep>1008</needStep>
+	<maxCount>2</maxCount>
+	<reward></reward>
+	<title>接力长征</title>
+	<icon>1009</icon>
+</config>
+<config>
+	<id>1010</id>
+	<needStep>1009</needStep>
+	<maxCount>3</maxCount>
+	<reward></reward>
+	<title>10倍接力长征</title>
+	<icon>1010</icon>
+</config>
+<config>
+	<id>1011</id>
+	<needStep>1010</needStep>
+	<maxCount>3</maxCount>
+	<reward></reward>
+	<title>10倍接力长征</title>
+	<icon>1011</icon>
+</config>
+<config>
+	<id>1012</id>
+	<needStep>1011</needStep>
+	<maxCount>3</maxCount>
+	<reward></reward>
+	<title>10倍接力长征</title>
+	<icon>1012</icon>
+</config>
+</root>

@@ -1,0 +1,8 @@
+package com.game.domain.bag;
+
+/**
+ * Created by lucky on 2019/3/13.
+ */
+public interface ItemConsts {
+    int GUARD_ITEM_ID = 1;
+}

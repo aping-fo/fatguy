@@ -1,0 +1,24 @@
+package com.game.sdk.handler;
+
+import com.game.sdk.annotation.Command;
+import com.game.sdk.annotation.Handler;
+import com.game.sdk.net.Cmd;
+import com.game.sdk.net.Result;
+import com.game.sdk.proto.UseItemReq;
+import com.game.service.BagService;
+import org.springframework.beans.factory.annotation.Autowired;
+
+/**
+ * Created by lucky on 2018/10/11.
+ */
+@Handler
+public class BagHandler {
+    @Autowired
+    private BagService bagService;
+
+    @Command(cmd = Cmd.USE_ITEM, description = "使用道具")
+    public Result useItem(String openId, UseItemReq req) throws Exception {
+        Result result = bagService.useItem(openId, req.getItemId(), req.getCount());
+        return result;
+    }
+}

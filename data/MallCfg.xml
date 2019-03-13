@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1001</id>
+	<needStep>10000</needStep>
+	<maxCount>50000</maxCount>
+	<reward></reward>
+	<title>华为Mate20</title>
+	<icon>1001</icon>
+</config>
+<config>
+	<id>1002</id>
+	<needStep>10000</needStep>
+	<maxCount>50000</maxCount>
+	<reward></reward>
+	<title>OPPOFindX</title>
+	<icon>1002</icon>
+</config>
+<config>
+	<id>1003</id>
+	<needStep>10000</needStep>
+	<maxCount>50000</maxCount>
+	<reward></reward>
+	<title>VIVONEX</title>
+	<icon>1003</icon>
+</config>
+<config>
+	<id>1004</id>
+	<needStep>10000</needStep>
+	<maxCount>1000</maxCount>
+	<reward></reward>
+	<title>平仄茶水分离杯</title>
+	<icon>1004</icon>
+</config>
+<config>
+	<id>1005</id>
+	<needStep>10000</needStep>
+	<maxCount>1000</maxCount>
+	<reward></reward>
+	<title>云麦智能体脂秤</title>
+	<icon>1005</icon>
+</config>
+<config>
+	<id>1006</id>
+	<needStep>10000</needStep>
+	<maxCount>1000</maxCount>
+	<reward></reward>
+	<title>贝医生电动牙刷</title>
+	<icon>1006</icon>
+</config>
+<config>
+	<id>1007</id>
+	<needStep>10000</needStep>
+	<maxCount>10000</maxCount>
+	<reward></reward>
+	<title>JBL无线蓝牙耳机</title>
+	<icon>1007</icon>
+</config>
+<config>
+	<id>1008</id>
+	<needStep>10000</needStep>
+	<maxCount>10000</maxCount>
+	<reward></reward>
+	<title>飞利浦便携低音炮</title>
+	<icon>1008</icon>
+</config>
+<config>
+	<id>1009</id>
+	<needStep>10000</needStep>
+	<maxCount>10000</maxCount>
+	<reward></reward>
+	<title>UA中性双肩包</title>
+	<icon>1009</icon>
+</config>
+<config>
+	<id>1010</id>
+	<needStep>10000</needStep>
+	<maxCount>100000</maxCount>
+	<reward></reward>
+	<title>MateRS保时捷版</title>
+	<icon>1010</icon>
+</config>
+<config>
+	<id>1011</id>
+	<needStep>10000</needStep>
+	<maxCount>100000</maxCount>
+	<reward></reward>
+	<title>华为13.9全面屏笔记本</title>
+	<icon>1011</icon>
+</config>
+<config>
+	<id>1012</id>
+	<needStep>10000</needStep>
+	<maxCount>100000</maxCount>
+	<reward></reward>
+	<title>六福黄金金条20克</title>
+	<icon>1012</icon>
+</config>
+</root>

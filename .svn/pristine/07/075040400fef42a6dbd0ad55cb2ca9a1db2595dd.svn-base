@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1</id>
+	<name>感冒灵1</name>
+	<icon>a</icon>
+	<pts>100</pts>
+</config>
+<config>
+	<id>2</id>
+	<name>感冒灵2</name>
+	<icon>b</icon>
+	<pts>200</pts>
+</config>
+<config>
+	<id>3</id>
+	<name>感冒灵3</name>
+	<icon>a</icon>
+	<pts>300</pts>
+</config>
+<config>
+	<id>4</id>
+	<name>感冒灵4</name>
+	<icon>b</icon>
+	<pts>400</pts>
+</config>
+<config>
+	<id>5</id>
+	<name>感冒灵5</name>
+	<icon>a</icon>
+	<pts>500</pts>
+</config>
+<config>
+	<id>6</id>
+	<name>感冒灵6</name>
+	<icon>b</icon>
+	<pts>600</pts>
+</config>
+<config>
+	<id>7</id>
+	<name>感冒灵7</name>
+	<icon>a</icon>
+	<pts>700</pts>
+</config>
+<config>
+	<id>8</id>
+	<name>感冒灵8</name>
+	<icon>b</icon>
+	<pts>800</pts>
+</config>
+<config>
+	<id>9</id>
+	<name>感冒灵9</name>
+	<icon>a</icon>
+	<pts>900</pts>
+</config>
+</root>

@@ -1,0 +1,10 @@
+package com.game.data;
+
+/**
+* j角色状态表.xlsx(自动生成，请勿编辑！)
+*/
+public class RoleInfoCfg {
+	public int id;//ID
+	public int stage;//阶段
+	public int consumeCalories;//消耗卡路里
+}

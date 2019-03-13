@@ -1,0 +1,215 @@
+package com.game.service;
+
+import com.game.dao.ConsumeDAO;
+import com.game.dao.PlayerDAO;
+import com.game.dao.ServerDataDAO;
+import com.game.data.MallCfg;
+import com.game.domain.ServerData;
+import com.game.domain.consume.Consume;
+import com.game.domain.mall.Mall;
+import com.game.domain.player.Player;
+import com.game.sdk.net.Result;
+import com.game.sdk.proto.IntegrationMallResp;
+import com.game.sdk.utils.ErrorCode;
+import com.game.util.ConfigData;
+import com.game.util.JsonUtils;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ThreadLocalRandom;
+
+import static java.nio.charset.StandardCharsets.UTF_8;
+
+/**
+ * 商城
+ */
+@Service
+public class MallService extends AbstractService {
+    @Autowired
+    private PlayerService playerService;
+    @Autowired
+    private BroadcastService broadcastService;
+    @Autowired
+    private ConsumeDAO consumeDAO;
+    @Autowired
+    private PlayerDAO playerDAO;
+    @Autowired
+    private ServerDataDAO serverDataDAO;
+    private List<MallCfg> cfgList;
+
+    private ServerData serverData;
+
+
+    @Override
+    public void onStart() {
+        byte[] data = serverDataDAO.queryServerData();
+        if (data != null) {
+            String json = new String(data, UTF_8);
+            serverData = JsonUtils.string2Object(json, ServerData.class);
+        } else {
+            serverData = new ServerData();
+            String json = JsonUtils.object2String(serverData);
+            serverDataDAO.saveOrUpdate(888, json.getBytes(UTF_8));
+        }
+        initCfgList();
+    }
+
+    /**
+     * 购买商品
+     *
+     * @param openId
+     * @param id
+     * @return
+     */
+    public Result buyItem(String openId, int id) {
+        Player player = playerService.getPlayer(openId);
+
+//        Mall mall = serverData.getMallMap().get(id);
+//        if (mall == null) {
+//            mall = new Mall(id);
+//            serverData.getMallMap().put(id,mall);
+//        }
+//
+//        MallCfg cfg = ConfigData.getConfig(MallCfg.class, id);
+//
+        String errorCode = ErrorCode.OK;
+//        int step=player.getPlayerDataObject().getStep();
+//        if(step<cfg.needStep)
+//        {
+//            errorCode = ErrorCode.MALL_STEP_NOT_ENOUGH;
+//            return Result.valueOf(errorCode);
+//        }
+//        if (!mall.add(openId, mall.genCode(), cfg.maxCount)) {
+//            errorCode = ErrorCode.MALL_MAX_COUNT;
+//            return Result.valueOf(errorCode);
+//        }
+//
+//        step=step-cfg.needStep;
+//        player.getPlayerDataObject().setStep(step);
+//        playerDAO.saveOrUpdate(player);
+//
+//        if (mall.getPlayerSteps().size() == cfg.maxCount) {
+//            List<String> openids = Lists.newArrayList(mall.getPlayerSteps().keySet());
+//            int idx = ThreadLocalRandom.current().nextInt(openids.size());
+//            String awardOpenid = openids.get(idx);
+//            mall.setOpenid(awardOpenid);
+//            mall.setNickName(player.getNickName());
+//            broadcastService.addActivityFullEvent(cfg.title);
+//            broadcastService.addActivityAwardEvent(cfg.title,player.getNickName());
+//        }
+        Map<String, Object> resp = Maps.newHashMap();
+//        resp.put("step",step);
+//        resp.put("count",mall.getPlayerSteps().size());
+//        String json = JsonUtils.object2String(serverData);
+//        serverDataDAO.saveOrUpdate(888, json.getBytes(UTF_8));
+//
+//        broadcastService.addActivityJoinEvent(player.getNickName(),cfg.title);
+        return Result.valueOf(errorCode,resp);
+    }
+
+    /**
+     * 中奖人信息
+     *
+     * @param openId
+     * @return
+     */
+    public Result getRewarder(String openId) {
+        Map<String, Object> resp = Maps.newHashMap();
+        if (serverData != null) {
+            for (Mall mall : serverData.getMallMap().values()) {
+                Map<String, Object> item = Maps.newHashMap();
+                item.put("id",mall.getId());
+                item.put("openid", mall.getOpenid());
+                item.put("nickName", mall.getNickName());
+                item.put("consumed",consumeDAO.queryConsume(openId,mall.getId()) != null);
+                item.put("partaked",mall.getPlayerSteps().containsKey(openId));
+                resp.put(String.valueOf(mall.getId()), item);
+            }
+        }
+        return Result.valueOf(ErrorCode.OK, resp);
+    }
+
+    /**
+     * 获取IntegrationMall_ITEMS
+     */
+    public Result getIntegrationMallitems(String openId) {
+        IntegrationMallResp resp = new IntegrationMallResp();
+        if (cfgList == null) {
+            initCfgList();
+        }
+
+        resp.setMallItems(cfgList);
+        return Result.valueOf(ErrorCode.OK, resp);
+    }
+
+    /**
+     * 消耗健康币兑换
+     */
+    public Result consume(String openId, String name, String phone, String address, int itemId) {
+        Player player = playerService.getPlayer(openId);
+        Mall mall = serverData.getMallMap().get(itemId);
+        if(mall == null || !mall.getOpenid().equals(openId))
+        {
+            return Result.valueOf(ErrorCode.MALL_NOT_REWARDER);
+        }
+        if(consumeDAO.queryConsume(openId,itemId) != null)
+        {
+            return Result.valueOf(ErrorCode.MALL_ALREADY_CONSUME);
+        }
+        Consume consume = new Consume();
+        consume.setOpenId(openId);
+        consume.setName(name);
+        consume.setPhone(phone);
+        consume.setAddress(address);
+        consume.setItemId(itemId);
+        consumeDAO.insert(consume);
+
+        return Result.valueOf(ErrorCode.OK, "ok");
+    }
+
+    private void initCfgList() {
+        Collection<Object> configs = ConfigData.getConfigs(MallCfg.class);
+        Object[] array = configs.toArray();
+        cfgList = new ArrayList<>();
+        for (int i = 0; i < array.length; i++) {
+            cfgList.add((MallCfg) array[i]);
+        }
+    }
+
+    private MallCfg getCfgById(int id) {
+        for (int i = 0; i < cfgList.size(); i++) {
+            if (cfgList.get(i).id == id) {
+                return cfgList.get(i);
+            }
+        }
+        return null;
+    }
+
+    /**
+     * 获取参与者人数
+     *
+     * @param openId
+     * @param id
+     * @return
+     */
+    public Result getMallParticipantCount(String openId,int id)
+    {
+        Mall mall = serverData.getMallMap().get(id);
+        if (mall == null) {
+            mall = new Mall(id);
+        }
+        Map<String, Object> resp = Maps.newHashMap();
+        resp.put("id",id);
+        resp.put("count",mall.getPlayerSteps().size());
+        return Result.valueOf(ErrorCode.OK, resp);
+    }
+
+
+
+}

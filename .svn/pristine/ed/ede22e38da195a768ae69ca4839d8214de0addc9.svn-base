@@ -1,0 +1,2469 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1</id>
+	<content>据统计,长征中,平均每天走37公里,平均每前进70米就牺牲一个人,对吗？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>2</id>
+	<content>据统计,长征中,平均每天走47公里,平均每前进70米就牺牲一个人,对吗？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>3</id>
+	<content>“长征是宣言书,长征是宣传队。长征是播种机。”这句话是毛泽东说的,对吗？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>4</id>
+	<content>“长征是宣言书,长征是宣传队。长征是播种机。”这句话是朱德说的,对吗？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>5</id>
+	<content>中央红军开始实行战略转移是在1934年10月10日晚,对吗？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>6</id>
+	<content>中央红军开始实行战略转移是在1934年10月9日晚,对吗？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>7</id>
+	<content>中央红军主力在突破国民党军第一道封锁线的战斗中,红3军团第4师师长洪超牺牲,是吗？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>8</id>
+	<content>中央红军主力在突破国民党军第一道封锁线的战斗中,红3军团第4师师长王树湘牺牲,是吗？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>9</id>
+	<content>中央红军是在博古和军事顾问李德的指挥下,开始了战略转移,对吗？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>10</id>
+	<content>中央红军是在毛泽东和朱德的指挥下,开始了战略转移,对吗？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>11</id>
+	<content>遵义会议解决的是当时最紧迫、关系到党和红军生死存亡的军事问题和组织问题,对吗？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>12</id>
+	<content>遵义会议解决的是当时最紧迫、关系到党和红军生死存亡的军事问题和政治问题,对吗？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>13</id>
+	<content>两河口会议的召开时间是1935年6月26日,对吗？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>14</id>
+	<content>两河口会议的召开时间是1935年6月28日,对吗？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>15</id>
+	<content>中共中央在毛儿盖附近的沙窝召开政治局扩大会议的时间是1935年8月4日至6日,对吗？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>16</id>
+	<content>中共中央在毛儿盖附近的沙窝召开政治局扩大会议的时间是1935年8月6日至8日,对吗？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>17</id>
+	<content>遵义会议中对意见不一致的政治问题留待以后解决,对吗？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>18</id>
+	<content>遵义会议中对意见不一致的政治问题也一并解决了,对吗？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>19</id>
+	<content>两河口会议主要讨论的是红一、红四方面军会师后的战略问题,对吗？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>20</id>
+	<content>黎平会议主要讨论的是红一、红四方面军会师后的战略问题,对吗？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>21</id>
+	<content>俄界会议决定成立毛泽东、周恩来、彭德怀、林彪、王稼祥组成五人团领导红军工作,对吗？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>22</id>
+	<content>俄界会议决定成立毛泽东、周恩来、彭德怀、张闻天、王稼祥组成五人团领导红军工作,对吗？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>23</id>
+	<content>决定继续北上,率领红军到陕北去的会议是榜罗会议,对吗？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>24</id>
+	<content>决定继续北上,率领红军到陕北去的会议是俄界会议,对吗？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>25</id>
+	<content>中共中央到达陕甘苏区吴起镇,完成二万五千里长征的时间是1935年10月19日？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>26</id>
+	<content>中共中央到达陕甘苏区吴起镇,完成二万五千里长征的时间是1935年10月20日？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>27</id>
+	<content>中共中央到达陕甘苏区吴起镇,完成二万五千里长征的时间是1935年10月18日？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>28</id>
+	<content>确定了建立抗日民族统一战线的总政策的会议是瓦窑堡会议,对吗？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>29</id>
+	<content>确定了建立抗日民族统一战线的总政策的会议是榜罗镇会议,对吗？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>30</id>
+	<content>确定了建立抗日民族统一战线的总政策的会议是俄界会议,对吗？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>31</id>
+	<content>1936年1月14日,红1军团以直属第1、第13团为基础组成第一师,陈赓任师长,是吗？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>32</id>
+	<content>1936年1月14日,红1军团以直属第1、第13团为基础组成第一师,粟裕任师长,是吗？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>33</id>
+	<content>通过了《中央政治局关于战略方针的决定》,标志着中央红军战略转变的开始是黎平会议？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>34</id>
+	<content>通过了《中央政治局关于战略方针的决定》,标志着中央红军战略转变的开始是猴场会议？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>35</id>
+	<content>决定红军抢渡乌江,攻占遵义的会议是猴场会议？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>36</id>
+	<content>决定红军抢渡乌江,攻占遵义的会议是黎平会议？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>37</id>
+	<content>中共中央、中革军委率军委纵队进驻黔北重镇遵义,兼任遵义警备司令的是刘伯承？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>38</id>
+	<content>中共中央、中革军委率军委纵队进驻黔北重镇遵义,兼任遵义警备司令的是彭德怀？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>39</id>
+	<content>遵义会议决定改组中共中央领导机构,增补毛泽东为中共中央政治局常委,对吗？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>40</id>
+	<content>遵义会议虽然改组中共中央领导机构,但没有增补毛泽东为中共中央政治局常委,对吗？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>41</id>
+	<content>遵义会议决定取消博古、李德的最高军事指挥权,后由朱德、周恩来为军事指挥者,对吗？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>42</id>
+	<content>遵义会议决定取消博古、李德的最高军事指挥权,后由朱德、毛泽东为军事指挥者,对吗？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>43</id>
+	<content>遵义会议后成立由毛泽东、周恩来、王稼祥组成的"三人军事指挥小组",对吗？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>44</id>
+	<content>张闻天在遵义议上首先发言批评博古、李德的"左"倾军事路线错误,是吗？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>45</id>
+	<content>张闻天在遵义议上首先发言批评博古、李德的"右"倾军事路线错误,是吗？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>46</id>
+	<content>中国共产党历史上第一次独立自主地运用马克思主义的基本原理,解决中国革命和革命战争的重大问题的会议是遵义会议？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>47</id>
+	<content>中国共产党历史上第一次独立自主地运用马克思主义的基本原理,解决中国革命和革命战争的重大问题的会议是瓦窑堡会议？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>48</id>
+	<content>1935年3月4日,中革军委决定组成由朱德为司令员,毛泽东任政治委员的前敌司令部,是吗？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>49</id>
+	<content>1935年3月4日,中革军委决定组成由朱德为司令员,周恩来任政治委员的前敌司令部,是吗？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>50</id>
+	<content>毛泽东被取消在红军中的一切职务之后,第一次以明确红军领导职务签署作战命令是在鸭溪？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>51</id>
+	<content>毛泽东被取消在红军中的一切职务之后,第一次以明确红军领导职务签署作战命令是在遵义？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>52</id>
+	<content>林彪在长征中曾提出要彭德怀任前敌指挥？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>53</id>
+	<content>林彪在长征中曾提出要毛泽东任前敌指挥？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>54</id>
+	<content>会理会议批评了林彪企图改变中央领导的严重错误,统一了战略思想,增强了团结？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>55</id>
+	<content>会理会议批评了彭德怀企图改变中央领导的严重错误,统一了战略思想,增强了团结？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>56</id>
+	<content>中央红军在长征途中跨越的第一座大雪山是海拔4000多米的夹金山？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>57</id>
+	<content>中央红军在长征途中跨越的第一座大雪山是海拔4000多米的达古雪山？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>58</id>
+	<content>中央红军先头部队在北进达维途中,率先与红四方面军先头部队胜利会师？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>59</id>
+	<content>中央红军先头部队在北进达维途中,率先与红二方面军先头部队胜利会师？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>60</id>
+	<content>中共中央、中革军委和中央红军主力到达四川懋功地区,与红四方面军部队胜利会师？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>61</id>
+	<content>懋功会师后,中共中央、中革军委决定继续北上在川、陕、甘三省建立根据地？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>62</id>
+	<content>懋功会师后,中共中央、中革军委决定继续北上在陕、甘、宁三省建立根据地？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>63</id>
+	<content>两河口会议决定集中主力红军向北进攻,首先取得甘肃南部,以创建川陕甘革命根据地？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>64</id>
+	<content>懋功会议决定集中主力红军向北进攻,首先取得甘肃南部,以创建川陕甘革命根据地？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>65</id>
+	<content>红军曾翻越梦笔山雪山？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>66</id>
+	<content>红军曾翻越贡嘎雪山？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>67</id>
+	<content>芦花会议,决定张国焘任红军总政治委员？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>68</id>
+	<content>芦花会议,决定张国焘任红军前敌总指挥？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>69</id>
+	<content>遵义会议后,博古不再担任任何职务？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>70</id>
+	<content>遵义会议后,博古仍继续在党内任职？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>71</id>
+	<content>1935年7月21日,中革军委决定组织前敌总指挥部,徐向前兼总指挥？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>72</id>
+	<content>1935年7月21日,中革军委决定组织前敌总指挥部,彭德怀兼总指挥？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>73</id>
+	<content>1935年9月9日,张国焘背着中共中央,电令陈昌浩率右路军南下,企图分裂和危害党中央？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>74</id>
+	<content>1935年9月9日,张国焘背着中共中央,电令徐向前率右路军南下,企图分裂和危害党中央？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>75</id>
+	<content>到了哈达铺后,正式宣布红一方面军主力改编为中国工农红军陕甘支队,全队共7000余人？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>76</id>
+	<content>到了哈达铺后,红一、四方面军主力改编为中国工农红军陕甘支队,全队共7000余人？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>77</id>
+	<content>改编后的中国工农红军陕甘支队,彭德怀任司令员,毛泽东任政治委员？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>78</id>
+	<content>改编后的中国工农红军陕甘支队,朱德任司令员,毛泽东任政治委员？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>79</id>
+	<content>按召开的时间先后排列,应该是黎平会议、猴场会议、遵义会议、扎西会议、俄界会议？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>80</id>
+	<content>按召开的时间先后排列,应该是黎平会议、猴场会议、遵义会议、俄界会议、扎西会议？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>81</id>
+	<content>1934年7月23日,中共中央、中革军委训令红6军团9700余人离开湘赣苏区,转移到湘中？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>82</id>
+	<content>1934年7月23日,中共中央、中革军委训令红6军团9700余人离开湘赣苏区,转移到鄂中？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>83</id>
+	<content>为策应中央红军,1934年10月28日红2、红6军团从四川秀山南腰界出动,向湘西地区进发？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>84</id>
+	<content>为策应中央红军,1934年10月28日红2、红6军团从四川秀山南腰界出动,向川西地区进发？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>85</id>
+	<content>中共中央于1936年7月27日决定成立中共中央西北局,由张国焘任书记,任弼时任副书记,朱德等人为委员？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>86</id>
+	<content>中共中央于1936年7月27日决定成立中共中央西北局,由张国焘任书记,陈昌浩任副书记,朱德等人为委员？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>87</id>
+	<content>红二方面军是惟一一支经过万里转战,没有出现严重减员的部队？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>88</id>
+	<content>红二、红六方面军虽经过万里转战,却没有出现严重减员？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>89</id>
+	<content>1934年8月7日下午3时,红6军团9758人从湘赣苏区的遂川县横石出发,开始了英勇的西征？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>90</id>
+	<content>1935年8月7日下午3时,红6军团从湘赣苏区的遂川县横石出发,开始了英勇的西征？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>91</id>
+	<content>红6军团主为在黔东印江县木黄与红3军会师,标志着红6军团历时80天西征胜利结束？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>92</id>
+	<content>红6军团主为在黔东印江县木黄与红3军会师,标志着红6军团历时90天西征胜利结束？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>93</id>
+	<content>1934年11月红3军和红6军团在黔东根据地会师,两支部队的兵力分别是4400和3300人？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>94</id>
+	<content>1934年11月红3军和红6军团在黔东根据地会师,两支部队的兵力分别是3300和4400人？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>95</id>
+	<content>1935年2月8日,中央军委湘鄂川黔分会成立,红2、红6军团有了统一的军事集体领导机构？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>96</id>
+	<content>1935年2月8日,中央军委湘鄂川赣分会成立,红2、红6军团有了统一的军事集体领导机构？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>97</id>
+	<content>1935年7月,红2、红6军团与中共中央的密码电讯联系中断？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>98</id>
+	<content>1935年7月,红2、红4军团与中共中央的密码电讯联系中断？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>99</id>
+	<content>红2、红6军团是最晚开始长征的,时间是1935年11月19日？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>100</id>
+	<content>红2、红6军团是最晚开始长征的,时间是1934年11月19日？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>101</id>
+	<content>红2、红6军团于1936年3月31日离开贵州盘县,西进云南,开始了长征的第2阶段？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>102</id>
+	<content>红2、红6军团于1936年3月31日离开贵州盘县,西进云南,开始了长征的第3阶段？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>103</id>
+	<content>红2、红6军成功翻越哈巴雪山,该山是红2、红6军团在长征途中翻越的第1座大雪山？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>104</id>
+	<content>红2、红6军成功翻越哈巴雪山,该山是红2、红6军团在长征途中翻越的第3座大雪山？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>105</id>
+	<content>1936年10月22日,红二方面军在会宁东北的将台堡与红一方面军胜利会师？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>106</id>
+	<content>1936年10月22日,红四方面军在会宁东北的将台堡与红一方面军胜利会师？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>107</id>
+	<content>张国焘曾致电中共中央,表示以“十二万分的热忱欢迎我百战百胜的中央西征军"？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>108</id>
+	<content>1935年5月18日,张国焘在茂县宣布成立"西北特委",30日,又宣布成立"西北联邦政府"？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>109</id>
+	<content>1935年5月18日,张国焘在理县宣布成立"西北特委",30日,又宣布成立"西北联邦政府"？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>110</id>
+	<content>红四方面军在长征中曾经三次穿越松潘草地？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>111</id>
+	<content>红四方面军在长征中曾经两次穿越松潘草地？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>112</id>
+	<content>1936年6月6日第二中央宣布取消,至此张国焘分裂党、分裂红军的罪恶活动宣告失败。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>113</id>
+	<content>1937年6月6日第二中央宣布取消,至此张国焘分裂党、分裂红军的罪恶活动宣告失败。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>114</id>
+	<content>红25军攻克镇安县城后,乘胜开展群众工作,开始创建鄂豫陕革命根据地。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>115</id>
+	<content>红25军攻克镇安县城后,乘胜开展群众工作,开始创建湘鄂陕革命根据地。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>116</id>
+	<content>红25军在板桥镇战斗后东渡葫芦河,沿着陕甘边界的崇山峻岭继续北进。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>117</id>
+	<content>红25军在板桥镇战斗后东渡葫芦河,沿着陕甘边界的崇山峻岭选择了南下。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>118</id>
+	<content>1934年11月16日,红25军由河南省罗山县何家冲出发开始长征。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>119</id>
+	<content>1934年11月16日,红25军由河北省罗山县何家冲出发开始长征。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>120</id>
+	<content>红25军在郧西、洵阳、镇安、山阳四县的边界地区创建了鄂豫陕第一块革命根据地。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>121</id>
+	<content>红25军在郧西、洵阳、镇安、山阳四县的边界地区创建了鄂豫晋第一块革命根据地。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>122</id>
+	<content>红军主力长征后,留在南方8省15个地区的红军游击队仍坚持了长达3年的游击战争。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>123</id>
+	<content>红军主力长征后,留在南方8省15个地区的红军游击队仍坚持了长达两年的游击战争。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>124</id>
+	<content>1935年7月中旬,蒋介石为了消灭陕甘红军,摧毁陕甘革命根据地,开始部署第三次"围剿"。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>125</id>
+	<content>1935年7月中旬,蒋介石为了消灭陕甘红军,摧毁陕甘革命根据地,开始部署第二次"围剿"。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>126</id>
+	<content>蒋介石于1935年3月2日飞抵重庆,亲自指挥,企图围歼中央红军于遵义、鸭溪地区。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>127</id>
+	<content>蒋介石于1935年3月2日飞抵贵阳,亲自指挥,企图围歼中央红军于遵义、鸭溪地区。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>128</id>
+	<content>中央红军成功的四渡赤水后,蒋介石恼羞成怒,急忙由重庆飞赴贵阳,亲自督师作战。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>129</id>
+	<content>中央红军成功的四渡赤水后,蒋介石恼羞成怒,急忙由南京飞赴贵阳,亲自督师作战。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>130</id>
+	<content>1935年4月20日蒋介石下令以50多个团兵力,向鄂豫陕革命根据地发动第二次“围剿”。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>131</id>
+	<content>红军会师后,蒋介石置全国人民“停止内战、一致抗日”的呼声于不顾,调动了近20个师兵力由南向北大举进攻。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>132</id>
+	<content>1933年9月至1934年10月,中央苏区第五次反“围剿”斗争持续了一年之久。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>133</id>
+	<content>1933年9月至1934年10月,中央苏区第五次反“围剿”斗争持续了两年之久。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>134</id>
+	<content>第五次反“围剿”的失败,从根本上说,是“左”倾冒险主义领导者错误指导的结果。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>135</id>
+	<content>被毛泽东本人称为这是他一生中的“得意之笔”的是“四渡赤水”。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>136</id>
+	<content>被毛泽东本人称为这是他一生中的“得意之笔”的是“巧渡金沙江”。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>137</id>
+	<content>被毛泽东本人称为这是他一生中的“得意之笔”的是“飞夺泸定桥”。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>138</id>
+	<content>广昌保卫战毙伤俘敌共2626人,自身却伤亡5093人,当面批评了李德瞎指挥的是彭德怀。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>139</id>
+	<content>广昌保卫战毙伤俘敌共2626人,自身却伤亡5093人,当面批评了李德瞎指挥的是毛泽东。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>140</id>
+	<content>中央红军开始长征时共8.6万余人,经湘江战役后,锐减为3万多人。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>141</id>
+	<content>中央红军开始长征时共8.6万余人,经湘江战役后,锐减为4万多人,只剩一半不到。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>142</id>
+	<content>湘江战役,中央红军与优势敌军苦战五昼夜,突破了敌军重兵设防的第四道封锁线。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>143</id>
+	<content>湘江战役,中央红军与优势敌军苦战五昼夜,突破了敌军重兵设防的第三道封锁线。</content>
+	<options></options>
+	<answerIndex></answerIndex>
+</config>
+<config>
+	<id>144</id>
+	<content>1935年1月,中央红军和军委纵队渡过了号称“乌江天险”的贵州省最大的河流。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>145</id>
+	<content>1935年1月,中央红军和军委纵队渡过了号称“大渡河天险”的贵州省最大的河流。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>146</id>
+	<content>1935年1月29日凌晨,中央红军主力分3路纵队西渡赤水进入川南地区,这是“一渡赤水”。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>147</id>
+	<content>1935年1月29日凌晨,中央红军主力分3路纵队西渡赤水进入川南地区,这是“二渡赤水”。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>148</id>
+	<content>2月8日至21日,中央红军由太平渡、二郎滩等渡口东渡赤水河,即二渡赤水。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>149</id>
+	<content>2月8日至21日,中央红军由太平渡、二郎滩等渡口东渡赤水河,即一渡赤水。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>150</id>
+	<content>毛泽东曾写到:“雄关漫道真如铁,而今迈步从头越。”词中涉及的是娄山关战斗。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>151</id>
+	<content>毛泽东曾写到:“雄关漫道真如铁,而今迈步从头越。”词中涉及的是山城关战斗。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>152</id>
+	<content>遵义战役被喻为长征以来最大的一次胜利,是由毛泽东指挥的？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>153</id>
+	<content>遵义战役被喻为长征以来最大的一次胜利,是由朱德指挥的？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>154</id>
+	<content>遵义战役,是二渡赤水之后在黔北地区进行的一次进攻战？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>155</id>
+	<content>遵义战役,是一渡赤水之后在黔北地区进行的一次进攻战？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>156</id>
+	<content>1935年3月16日,中央红军在茅台及其附近地区西渡赤水河,这指的是三渡赤水？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>157</id>
+	<content>1935年3月16日,中央红军在茅台及其附近地区西渡赤水河,这指的是四渡赤水？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>158</id>
+	<content>中央纵队先遣队以一昼夜行进百公里速度赶到皎平渡,用缴获的6只木船,成功渡过金沙江？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>159</id>
+	<content>中央纵队先遣队以一昼夜行进百公里速度赶到皎平渡,用缴获的6只木船,成功渡过大渡河？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>160</id>
+	<content>蒋介石曾企图凭借大渡河天险,使中央红军成为“石达开第二”？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>161</id>
+	<content>蒋介石曾企图凭借金沙江天险,使中央红军成为“石达开第二”？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>162</id>
+	<content>飞夺泸定桥中红4团做到了急行军160公里？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>163</id>
+	<content>飞夺泸定桥中红4团做到了急行军160公里,创造了在长征中最快的行军？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>164</id>
+	<content>飞夺泸定桥,22名共产党员和积极分子组成的突击队,冒着敌人密集的火力向对岸冲去。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>165</id>
+	<content>飞夺泸定桥,21名共产党员和积极分子组成的突击队,冒着敌人密集的火力向对岸冲去。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>166</id>
+	<content>《松潘战役计划》的制定时间是1935年6月29日。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>167</id>
+	<content>《松潘战役计划》的制定时间是1935年6月26日。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>168</id>
+	<content>《夏洮战役计划》的制定时间是1935年8月3日。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>169</id>
+	<content>《夏洮战役计划》的制定时间是1935年8月5日。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>170</id>
+	<content>《夏洮战役计划》由朱德和张国焘指挥？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>171</id>
+	<content>《夏洮战役计划》由朱德和毛泽东指挥？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>172</id>
+	<content>红1、红4方面军会师后第一个大胜利,是指包座战役？</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>173</id>
+	<content>红1、红4方面军会师后第一个大胜利,是指六盘山战役？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>174</id>
+	<content>红军经腊子口之战,既缴获了大批粮食为刚出草地的红军获得给养,又打开了北上的通道。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>175</id>
+	<content>红军经腊子口之战,既缴获了大批粮食为刚出草地的红军获得给养,又打开了北上的通道。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>176</id>
+	<content>百丈战斗失利是红四方面军南下从进攻转入防御的一个转折点。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>177</id>
+	<content>第五次“围剿”中,蒋介石采取了持久战与堡垒主义结合的新策略以达到消灭红军的目的。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>178</id>
+	<content>第五次“围剿”中,蒋介石采取了集中优势兵力速战速决的新策略以达到消灭红军的目的。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>179</id>
+	<content>红军攻占遵义后,蒋介石为阻止红军北渡长江与红四方面军会合,集中了约40万人的兵力向遵义地区进逼。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>180</id>
+	<content>红军攻占遵义后,蒋介石为阻止红军北渡长江与红四方面军会合,集中了约80万人的兵力向遵义地区进逼。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>181</id>
+	<content>为顺利通过彝民区,由红军总参谋刘伯承兼先遣队司令员,向大凉山西部彝族区进军。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>182</id>
+	<content>为顺利通过彝民区,由红军总参谋贺龙兼先遣队司令员,向大凉山西部彝族区进军。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>183</id>
+	<content>1936年4月14日,陕甘苏区和陕甘红军主要创建人之一刘志丹在中阳三交镇战斗中不幸牺牲。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>184</id>
+	<content>1936年4月14日,陕甘苏区和陕甘红军主要创建人之一方志敏在中阳三交镇战斗中不幸牺牲。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>185</id>
+	<content>被“左”倾领导者留在中央苏区,未能随中央红军参加长征的有瞿秋白。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>186</id>
+	<content>1935年10月10日,瞿秋白跟随中央红军离开苏区,一起踏上了长征路。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>187</id>
+	<content>在长征中第一个从“左”倾营垒中分化出来而转向毛泽东正确路线的中共领导人是王稼祥。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>188</id>
+	<content>在长征中第一个从“左”倾营垒中分化出来而转向毛泽东正确路线的中共领导人是张闻天。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>189</id>
+	<content>遵义会议中邓小平以中共中央秘书长身份参加会议。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>190</id>
+	<content>邓小平并没有参加遵义会议。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>191</id>
+	<content>遵义会议上张闻天作了反对“左”倾军事错误报告,批评了博古、李德在军事指挥的错误。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>192</id>
+	<content>遵义会议上王稼祥作了反对“左”倾军事错误报告,批评了博古、李德在军事指挥的错误。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>193</id>
+	<content>“哪有红军打红军的道理,要听指挥,无论如何不能打！”说这句话的是徐向前。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>194</id>
+	<content>“哪有红军打红军的道理,要听指挥,无论如何不能打！”说这句话的是彭德怀。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>195</id>
+	<content>中央红军长征中,共有32位女同志,历经艰难险阻,胜利完成了长征。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>196</id>
+	<content>中央红军长征中,共有30位女同志,历经艰难险阻,胜利完成了长征。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>197</id>
+	<content>1936年7月27日中共西北局批准成立,由张国焘任书记,领导红军第二、四方面军北上。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>198</id>
+	<content>1936年7月27日中共西北局批准成立,由任弼时任书记,领导红军第二、四方面军北上。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>199</id>
+	<content>中国工农红军第25军在安徽六安麻埠正式成立,首任军长是旷继勋。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>200</id>
+	<content>中国工农红军第25军在安徽六安麻埠正式成立,首任军长是贺龙。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>201</id>
+	<content>1934年11月1日,程子华担任红25军军长一职。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>202</id>
+	<content>1934年11月1日,陈云担任红25军军长一职。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>203</id>
+	<content>长征中各路红军都拥有一支鲜为人知的在世界军事史上罕见的流动学校干部团,随军办学。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>204</id>
+	<content>长征中红军拥有在世界军事史上罕见的流动学校干部团随军办学,干部团只跟随中央红军。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>205</id>
+	<content>懋功会师后,中央红军干部团与红四方面军红军大学合并,组成红军大学。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>206</id>
+	<content>会宁会师后,中央红军干部团与红四方面军红军大学合并,组成红军大学。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>207</id>
+	<content>1935年12月27日,红一方面军恢复开办教导营,第一期计划培训排长300名。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>208</id>
+	<content>1935年12月27日,红一方面军恢复开办教导营,第一期计划培训连长300名。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>209</id>
+	<content>长征途中,红军总政治部机关报《红星》报先后由邓小平和陆定一担任主编。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>210</id>
+	<content>长征途中,红军总政治部机关报《红星》报先后由陆定一和邓小平担任主编。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>211</id>
+	<content>陈云于1935年秋撰写了《随军西行见闻录》,这是最早向国内外报道红军长征的文章。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>212</id>
+	<content>埃德加·斯诺1935年秋撰写了《随军西行见闻录》,这是最早向国内外报道红军长征的文章。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>213</id>
+	<content>在长征途中,中共中央和中央革命军事委员会的惟一报纸是《红星》报。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>214</id>
+	<content>在长征途中,中共中央和中央革命军事委员会的惟一报纸是《新华日报》。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>215</id>
+	<content>《红军二万五千里西引记》,是在国民党统治区最早发表的介绍红军长征的文章。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>216</id>
+	<content>《随军西行见闻录》,是在国民党统治区最早发表的介绍红军长征的文章。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>217</id>
+	<content>《红军二万五千里西引记》的作者是董健吾。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>218</id>
+	<content>《红军二万五千里西引记》的作者是鲁迅。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>219</id>
+	<content>埃德加•斯诺在英国伦敦出版了《红星照耀中国》,报道了中国工农红军的长征。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>220</id>
+	<content>埃德加•斯诺在美国旧金山出版了《红星照耀中国》,报道了中国工农红军的长征。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>221</id>
+	<content>红军进人彝族区时,刘伯承与彝族首领小叶丹歃血盟誓,结拜为兄弟。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>222</id>
+	<content>红军进人彝族区时,贺龙与彝族首领小叶丹歃血盟誓,结拜为兄弟。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>223</id>
+	<content>在中央红军进入彝族地区时,红军总司令朱德发布了《中国工农红军布告》。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>224</id>
+	<content>毛泽东《长征》一诗写于1935年？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>225</id>
+	<content>毛泽东《长征》一诗写于1936年？</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>226</id>
+	<content>1934年10月随中央红军长征,会师后又随红四方面军行动的越南人是洪水。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>227</id>
+	<content>越南人洪水在1934年10月随中央红军长征,坚持走完全程,一直到陕北。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>228</id>
+	<content>有不少外国人参加了长征,其中,走完长征全程的德国人是时任军事顾问的奥托布劳恩。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>229</id>
+	<content>奥托布劳恩（李德）在遵义会议后弃红军而去,辗转回国。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>230</id>
+	<content>帮助把法文贵州省地图翻译成汉语的法国传教士名叫薄复礼。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>231</id>
+	<content>帮助把英文贵州省地图翻译成汉语的英国传教士名叫薄复礼。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>232</id>
+	<content>随红2、红6军团长征,到昆明附近离开部队的是法国传教士阿尔佛雷德勃沙特。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>233</id>
+	<content>长征总共有四个出发点。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>235</id>
+	<content>长征总共有五个出发点。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>236</id>
+	<content>被誉为长征零公里处的地方为福建长汀中复村。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>237</id>
+	<content>被誉为长征零公里处的地方为江西长汀中复村。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>238</id>
+	<content>北上抗日宣言第一村是指石峰村,位于福建。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>239</id>
+	<content>北上抗日宣言第一村是指石峰村,位于江西。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>240</id>
+	<content>毛泽东是在瑞金附近的云石山开始了长征。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>241</id>
+	<content>1935年10月,毛泽东在瑞金城跟随大部队开始了长征。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>242</id>
+	<content>中央红军开始长征集结地是于都。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>243</id>
+	<content>中央红军开始长征集结地是瑞金。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>244</id>
+	<content>云石山被誉为长征第一山。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>245</id>
+	<content>被誉为长征第一山的是老山界。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>246</id>
+	<content>长征第一仗是在江西信丰的百石圩。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>247</id>
+	<content>长征第一仗是在广西信丰的百石圩。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>248</id>
+	<content>长征路上首位牺牲的师长是红三军第四平师师长洪超。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>249</id>
+	<content>长征路上首位牺牲的师长是红三军第四平师师长陈树湘。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>250</id>
+	<content>占领宜章城,标志着中央红军胜利突破了蒋介石的第三道封锁线。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>251</id>
+	<content>占领宜章城,标志着中央红军胜利突破了蒋介石的第二道封锁线。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>252</id>
+	<content>陈树湘被俘后用尽最后气力把肠子扯断,壮烈牺牲,被誉为以最壮烈方式牺牲的红军师长。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>253</id>
+	<content>洪超被俘后用尽最后气力把肠子扯断,壮烈牺牲,被誉为以最壮烈方式牺牲的红军师长。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>254</id>
+	<content>华江瑶族乡是中央红军渡过湘江后路过的第一个少数民族乡,位于老山界山脚。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>255</id>
+	<content>华江瑶族乡是中央红军渡过湘江前路过的第一个少数民族乡,位于老山界山脚。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>256</id>
+	<content>通道会议是红军长征路上第一个重要的会议。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>257</id>
+	<content>黎平会议是红军长征路上第一个重要的会议。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>258</id>
+	<content>被誉为长征路上重要转折点的会议是黎平会议。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>259</id>
+	<content>被誉为长征路上重要转折点的会议是通道会议。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>260</id>
+	<content>被周恩来誉为“伟大转折的前夜”的会议是猴场会议。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>261</id>
+	<content>被周恩来誉为“伟大转折的前夜”的会议是黎平会议。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>262</id>
+	<content>被誉为“五老”的何叔衡、徐特立、董必武、谢觉哉、林伯渠都全程参与了长征。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>263</id>
+	<content>“五老”中,只有徐特立、董必武、谢觉哉、林伯渠四人全程参与了长征。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>264</id>
+	<content>“五老”中的何叔衡没有参与长征。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>265</id>
+	<content>“五老”中的林伯渠没有参与长征。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>266</id>
+	<content>徐特立是走完长征路的最大年龄者。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>267</id>
+	<content>董必武是走完长征路的最大年龄者。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>268</id>
+	<content>被誉为“中国共产党历史上一个生死攸关的转折点”的会议是指遵义会议。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>269</id>
+	<content>被誉为“中国共产党历史上一个生死攸关的转折点”的会议是指黎平会议。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>270</id>
+	<content>四川古蔺县太平镇,曾是红军二渡、四渡赤水的渡口。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>271</id>
+	<content>四川古蔺县土城镇,曾是红军二渡、四渡赤水的渡口。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>272</id>
+	<content>著名的茅台镇是红军三渡赤水之地。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>273</id>
+	<content>著名的茅台镇是红军二渡赤水之地。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>274</id>
+	<content>遵义会议后毛泽东担任前敌司令部政委,一星期后苟坝会议中又被撤掉了,但又立刻恢复。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>275</id>
+	<content>贺子珍参与了长征,且在红军行至贵州威舍镇时,为掩护伤员躲避敌军轰炸时负伤。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>276</id>
+	<content>贺子珍参与了长征,在行军中为掩护伤员躲避敌军轰炸时负伤,随即留在了威舍当地。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>277</id>
+	<content>红军在长征路上也一直在“扩红”,云南宣威会泽县是红军扩红最多的地方。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>278</id>
+	<content>云南宣威会泽县是红军扩红最多的地方,两天时间共扩红近万人。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>279</id>
+	<content>巧渡金沙江的金沙江在云南境内。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>280</id>
+	<content>巧渡金沙江的金沙江在贵州境内。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>281</id>
+	<content>红军翻越的第三座雪山是雅克夏雪山。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>282</id>
+	<content>红军翻越的第三座雪山是雅克昌德。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>283</id>
+	<content>昌德雪山是红军翻越的第四座雪山。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>284</id>
+	<content>昌德雪山是红军翻越的第三座雪山。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>285</id>
+	<content>达古雪山是红军翻越的第五座雪山。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>286</id>
+	<content>达古雪山是红军翻越的第二座雪山。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>287</id>
+	<content>芦花会议时,张国焘直接“向中央要官”。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>288</id>
+	<content>松潘战役持续了近八个月。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>289</id>
+	<content>松潘战役持续了近四个月。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>290</id>
+	<content>红一方面军1935年6月过草地之前统计共有近2万人,过草地之后剩下1.3万人,损失6207人。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>291</id>
+	<content>红一方面军1935年8月过草地之前统计共有近2万人,过草地之后剩下1.3万人,损失6207人。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>292</id>
+	<content>红二方面军1936年7月过草地之前有1.6万人,走出草地时为1.3万人,过草地损失约3092人。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>293</id>
+	<content>红四方面军三过草地损失最大,仅以第三次过草地统计即损失近7000人。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>294</id>
+	<content>过草地时,红一方面军伤亡最大。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>295</id>
+	<content>过草地时,红二方面军伤亡最大。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>296</id>
+	<content>过草地时,红四方面军伤亡最大</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>297</id>
+	<content>中央正式指出张国焘错误是在俄界会议。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>298</id>
+	<content>中央正式指出张国焘错误是在毛儿盖会议。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>299</id>
+	<content>毛泽东首次朗诵《七律•长征》“红军不怕远征难,万水千山只等闲……”是在甘肃通渭县。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>300</id>
+	<content>毛泽东首次朗诵《七律•长征》“红军不怕远征难,万水千山只等闲……”是在陕北会宁县。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>301</id>
+	<content>红军三大主力会师,共有三个会师地。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>302</id>
+	<content>红军三大主力会师,只有一个会师地——会宁。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>303</id>
+	<content>中国工农红军三大主力会师后的第一大仗是指山城堡战役。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>304</id>
+	<content>中国工农红军三大主力会师后的第一大仗是指吴起镇战役。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>305</id>
+	<content>红军与陕北红军会师地点位于陕西延安吴起镇。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>306</id>
+	<content>红军与陕北红军会师地点位于甘肃会宁。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>307</id>
+	<content>红军长征纪念碑碑园、长征纪念碑总碑所在地为四川松潘川主寺,但红军长征未经过此地。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>308</id>
+	<content>红军长征纪念碑碑园、长征纪念碑总碑所在地为四川松潘川主寺镇,红军长征曾经过此地。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>309</id>
+	<content>达古雪山——它是翻越的红军人次最多的雪山,超过9万。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>310</id>
+	<content>夹金雪山——它是翻越的红军人次最多的雪山,超过9万。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>311</id>
+	<content>重要的鸡鸣三省会议是在遵义会议结束、红军一渡赤水后召开的。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>312</id>
+	<content>重要的鸡鸣三省会议是在遵义会议结束、红军四渡赤水后召开的。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>313</id>
+	<content>围追堵截红军长征的国民党广东军阀是陈济棠。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>314</id>
+	<content>围追堵截红军长征的国民党广东军阀是陈炯明。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>315</id>
+	<content>围追堵截红军长征的国民党湖南军阀是何健。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>316</id>
+	<content>围追堵截红军长征的国民党湖南军阀是刘湘。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>317</id>
+	<content>围追堵截红军长征的国民党桂系军阀,当时的统帅是白崇禧。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>318</id>
+	<content>围追堵截红军长征的国民党桂系军阀,当时的统帅是李宗仁。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>319</id>
+	<content>围追堵截红军长征的国民党四川军阀是刘湘。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>320</id>
+	<content>围追堵截红军长征的国民党四川军阀是何健。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>321</id>
+	<content>围追堵截红军长征的国民党贵州军阀是王家烈。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>322</id>
+	<content>围追堵截红军长征的国民党贵州军阀是龙云。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>323</id>
+	<content>围追堵截红军长征的国民党云南军阀是龙云。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>324</id>
+	<content>围追堵截红军长征的国民党云南军阀是王家烈。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>325</id>
+	<content>围追堵截红军长征的国民党山西军阀是阎锡山。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>326</id>
+	<content>中国工农红军长征的三大主力是中央红军,红二、四方面军。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>327</id>
+	<content>中国工农红军长征的三大主力是中央红军,红四、六方面军。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>328</id>
+	<content>红军长征跳出敌人的包围是在渡过金沙江。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>329</id>
+	<content>红军长征跳出敌人的包围是在渡过大渡河。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>330</id>
+	<content>红军长征结束的标志是红军大主力会宁会师。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>331</id>
+	<content>红军长征结束的标志是陕北会师。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>332</id>
+	<content>长征中红军变被动为主动的首次军事行动是巧渡金沙江。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>333</id>
+	<content>长征中红军变被动为主动的首次军事行动是四渡赤水。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>334</id>
+	<content>王明“左”倾冒险主义的特征是教条主义。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>335</id>
+	<content>王明“左”倾冒险主义的特征是经验主义。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>336</id>
+	<content>与叶丹歃血为盟的红军将领是彭德怀。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>337</id>
+	<content>与叶丹歃血为盟的红军将领是贺龙。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>338</id>
+	<content>红军右路军从四川松潘的毛儿盖出发,经过7天艰难跋涉过了荒无人烟的大草地。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>339</id>
+	<content>红军右路军从四川松潘的毛儿盖出发,经过15天艰难跋涉过了荒无人烟的大草地。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>340</id>
+	<content>直罗镇战役的胜利,给党中央把全国革命大本营放在西北的任务,举行了一个奠基礼。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>341</id>
+	<content>包座战役的胜利,给党中央把全国革命大本营放在西北的任务,举行了一个奠基礼。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>342</id>
+	<content>二万五千里是红一方面军所走的长征路程。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>343</id>
+	<content>二万五千里是红二方面军所走的长征路程。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>344</id>
+	<content>参加长征的共和国元帅有9人。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>345</id>
+	<content>参加长征的共和国元帅有10人。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>346</id>
+	<content>参加长征的共和国元帅有8人。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>347</id>
+	<content>“不到长城非好汉,屈批行程二万。”是毛泽东登上六盘山时的咏怀之作。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>348</id>
+	<content>“不到长城非好汉,屈批行程二万。”是毛泽东登上吴起胜利山时的咏怀之作。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>349</id>
+	<content>红军长征时期我党领导的先进青年群众组织是中国共产主义青年团。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>350</id>
+	<content>红军长征时期我党领导的先进青年群众组织是中国社会主义青年团。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>351</id>
+	<content>红军长征的原因是第五次反“围剿”的失败。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>352</id>
+	<content>红军长征的原因是北上抗日。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>353</id>
+	<content>《八一宣言》最早刊载于中共在巴黎出版的中文《救国报》第十期上。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>354</id>
+	<content>《八一宣言》最早刊载于中共在莫斯科出版的中文《救国报》第十期上。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>355</id>
+	<content>遵义会议上毛泽东成为中共中央主席。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>356</id>
+	<content>红军长征被称为战略转移。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>357</id>
+	<content>红军长征被称为突围转移。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>358</id>
+	<content>长征开始的时候红军总共有8.6万人。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>359</id>
+	<content>长征开始的时候中央红军总共有8.6万人。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>360</id>
+	<content>长征是在第5次反“围剿”失利的情况下展开的。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>361</id>
+	<content>长征是在第6次反“围剿”失利的情况下展开的。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>362</id>
+	<content>造成中央红军锐减的主要原因是“左”段错误。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>363</id>
+	<content>造成中央红军锐减的主要原因是“右”段错误。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>364</id>
+	<content>红25军曾被毛泽东誉为“中央红军之向导”。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>365</id>
+	<content>红二军团曾被毛泽东誉为“中央红军之向导”。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>366</id>
+	<content>红六军团曾被毛泽东誉为“中央红军之向导”。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>367</id>
+	<content>红军长征二万五千里,途经14个省。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>368</id>
+	<content>红军长征二万五千里,途经15个省。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>369</id>
+	<content>红军长征二万五千里,途经16个省。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>370</id>
+	<content>长征中,第一个到达陕北的军队是红二十五军。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>371</id>
+	<content>长征中,第一个到达陕北的军队是中央红军。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>372</id>
+	<content>长征中,第一个到达陕北的军队是红四方面军。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>373</id>
+	<content>红军长征,历尽千难万队,共跨越18条山脉。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>374</id>
+	<content>红军长征,历尽千难万队,共跨越17条山脉。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>375</id>
+	<content>红军长征,历尽千难万队,共跨越16条山脉。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>376</id>
+	<content>红军长征,历尽千难万队,共渡过24条河流。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>377</id>
+	<content>红军长征,历尽千难万队,共渡过25条河流。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>378</id>
+	<content>红军长征,历尽千难万队,共渡过23条河流。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>379</id>
+	<content>中央红军分三路西渡赤水河（一渡赤水）是在1935年1月29日。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>380</id>
+	<content>中央红军分三路西渡赤水河（一渡赤水）是在1935年1月28日。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>381</id>
+	<content>中央红军分三路西渡赤水河（一渡赤水）是在1935年2月29日。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>382</id>
+	<content>飞夺泸定桥的红四军团第二连突击队总共有22人。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>383</id>
+	<content>飞夺泸定桥的红四军团第二连突击队总共有21人。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>384</id>
+	<content>飞夺泸定桥的红四军团第二连突击队总共有23人。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>385</id>
+	<content>长征一词的首次使用是在1935年5月中共中央以朱德的名义发布的《中国工农红军布告》。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>386</id>
+	<content>长征一词的首次使用是在1935年5月中共中央以毛泽东的名义发布的《中国工农红军布告》。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>387</id>
+	<content>红军长征后,项英、陈毅等领导的八省游击战争,在长江南北进行了艰苦卓绝的斗争,保存了革命火种。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>388</id>
+	<content>红军长征后,陈毅、李富春等领导的八省游击战争,在长江南北进行了艰苦卓绝的斗争,保存了革命火种。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>389</id>
+	<content>红军长征后,瞿秋白等领导的八省游击战争,在长江南北进行了艰苦卓绝的斗争,保存了革命火种。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>390</id>
+	<content>长征时,中央革命军事委员会中最年轻的是博古。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>391</id>
+	<content>长征时,中央革命军事委员会中最年轻的是周恩来。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>392</id>
+	<content>红四方面军总指挥是徐向前。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>393</id>
+	<content>红四方面军总指挥是陈昌浩。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>394</id>
+	<content>红军第二方面军长征出发地是湖南桑植。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>395</id>
+	<content>红军第二方面军长征出发地是江西赣南。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>396</id>
+	<content>红军第二方面军长征出发地是江西瑞金。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>397</id>
+	<content>长征中被毛泽东称为“龙将军”的是刘伯承。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>398</id>
+	<content>长征中被毛泽东称为“龙将军”的是贺龙。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>399</id>
+	<content>红军与彝人的结盟地点在冕宁。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>400</id>
+	<content>红军与彝人的结盟地点在越西。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>401</id>
+	<content>1935年2月25日,红军夺取娄山关,娄山关位于贵州省北部。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>402</id>
+	<content>1935年2月25日,红军夺取娄山关,娄山关位于四川省北部。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>403</id>
+	<content>1935年2月25日,红军夺取娄山关,娄山关位于云南省北部。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>404</id>
+	<content>传奇式故事飞夺泸定桥,侨身仅有13根铁索。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>405</id>
+	<content>传奇式故事飞夺泸定桥,侨身仅有14根铁索。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>406</id>
+	<content>传奇式故事飞夺泸定桥,侨身仅有12根铁索。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>407</id>
+	<content>红军1团在强渡大渡河组成了突击队,突击队勇士为18人。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>408</id>
+	<content>红军1团在强渡大渡河组成了突击队,突击队勇士为17人。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>409</id>
+	<content>红军1团在强渡大渡河组成了突击队,突击队勇士为19人。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>410</id>
+	<content>红军长征共牺牲了约17万人。</content>
+	<options></options>
+	<answerIndex>0</answerIndex>
+</config>
+<config>
+	<id>411</id>
+	<content>红军长征共牺牲了约15万人。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+<config>
+	<id>412</id>
+	<content>红军长征共牺牲了约18万人。</content>
+	<options></options>
+	<answerIndex>1</answerIndex>
+</config>
+</root>

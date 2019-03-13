@@ -1,0 +1,176 @@
+[INFO ] 12-20 10:58:14  begin init server...
+[INFO ] 12-20 10:58:14  load game config...
+[INFO ] 12-20 10:58:14  Load Config GlobalConfig
+[INFO ] 12-20 10:58:14  Load Config IntegrationMallCfg
+[INFO ] 12-20 10:58:14  Load Config LevelCfg
+[INFO ] 12-20 10:58:14  Load Config MapCfg
+[INFO ] 12-20 10:58:14  Load Config QuestionCfg
+[INFO ] 12-20 10:58:14  Load Config SelfTestCfg
+[INFO ] 12-20 10:58:14  Load Config SelfTestDescriptionCfg
+[INFO ] 12-20 10:58:14  Load Config SelfTestResultCfg
+[INFO ] 12-20 10:58:14  load spring cfg...
+[INFO ] 12-20 10:58:14  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@6121c9d6: startup date [Thu Dec 20 10:58:14 CST 2018]; root of context hierarchy
+[INFO ] 12-20 10:58:14  Loading XML bean definitions from file [F:\h5\longmarch\config\application.xml]
+[INFO ] 12-20 10:58:14  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO ] 12-20 10:58:15  [jade] starting ...
+[INFO ] 12-20 10:58:15  [findFiles] start to found classes folders or rosed jar files by scope:null
+[INFO ] 12-20 10:58:15  [classesFolder] start to found available classes folders ...
+[INFO ] 12-20 10:58:15  [classesFolder] found 1 classes folders: [/F:/h5/longmarch/bin/[**]]
+[INFO ] 12-20 10:58:15  [jarFile] start to found available jar files for rose to scanning...
+[INFO ] 12-20 10:58:15  [jarFile] add jar resource: /F:/h5/longmarch/lib/paoding-rose-jade-1.0.1.jar[applicationContext]
+[INFO ] 12-20 10:58:15  [jarFile] found 1 jar files: [/F:/h5/longmarch/lib/paoding-rose-jade-1.0.1.jar[applicationContext]]
+[INFO ] 12-20 10:58:15  [findFiles] found 2 classes folders or rosed jar files : [/F:/h5/longmarch/bin/[**], /F:/h5/longmarch/lib/paoding-rose-jade-1.0.1.jar[applicationContext]]
+[INFO ] 12-20 10:58:15  [jade] found 1 jade urls: [file:/F:/h5/longmarch/bin/]
+[INFO ] 12-20 10:58:15  [jade] call 'jade/find'
+[INFO ] 12-20 10:58:15  [jade] found 5 beanDefinition from 'file:/F:/h5/longmarch/bin/'
+[INFO ] 12-20 10:58:15  [jade] exits
+[INFO ] 12-20 10:58:15  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@799f10e1: defining beans [dataSource,logerDataSource,jade.daoProcessor,jada.dataAccessProvider,jade.expressSQLInterpreter,defaultLogoutHandler,disposeHandler,loginAfterHandler,adminHandler,broadcastHandler,loginHandler,mallHandler,playerHandler,questHandler,adminService,broadcastService,chickenQuestService,mallService,playerService,context,serverTimer,threadService,timerService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.game.dao.ConsumeDAO,com.game.dao.FamilyDAO,com.game.dao.LoginLogDAO,com.game.dao.PlayerDAO,com.game.dao.ServerDataDAO]; root of factory hierarchy
+[INFO ] 12-20 10:58:18  using rowMapper org.springframework.jdbc.core.SingleColumnRowMapper@418c5a9c for com.game.dao.ServerDataDAO#queryServerData
+[INFO ] 12-20 10:58:21  using rowMapper net.paoding.rose.jade.core.BeanPropertyRowMapper@1d5a243d for com.game.dao.PlayerDAO#queryPlayerRank
+[INFO ] 12-20 10:58:21  using rowMapper net.paoding.rose.jade.core.BeanPropertyRowMapper@65e966f7 for com.game.dao.FamilyDAO#queryFamilyRank
+[INFO ] 12-20 10:59:38  begin init server...
+[INFO ] 12-20 10:59:38  load game config...
+[INFO ] 12-20 10:59:38  Load Config GlobalConfig
+[INFO ] 12-20 10:59:38  Load Config IntegrationMallCfg
+[INFO ] 12-20 10:59:38  Load Config LevelCfg
+[INFO ] 12-20 10:59:38  Load Config MapCfg
+[INFO ] 12-20 10:59:38  Load Config QuestionCfg
+[INFO ] 12-20 10:59:38  Load Config SelfTestCfg
+[INFO ] 12-20 10:59:38  Load Config SelfTestDescriptionCfg
+[INFO ] 12-20 10:59:38  Load Config SelfTestResultCfg
+[INFO ] 12-20 10:59:38  load spring cfg...
+[INFO ] 12-20 10:59:38  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@ed9d034: startup date [Thu Dec 20 10:59:38 CST 2018]; root of context hierarchy
+[INFO ] 12-20 10:59:38  Loading XML bean definitions from file [F:\h5\longmarch\config\application.xml]
+[INFO ] 12-20 10:59:38  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO ] 12-20 10:59:38  [jade] starting ...
+[INFO ] 12-20 10:59:38  [findFiles] start to found classes folders or rosed jar files by scope:null
+[INFO ] 12-20 10:59:38  [classesFolder] start to found available classes folders ...
+[INFO ] 12-20 10:59:38  [classesFolder] found 1 classes folders: [/F:/h5/longmarch/bin/[**]]
+[INFO ] 12-20 10:59:38  [jarFile] start to found available jar files for rose to scanning...
+[INFO ] 12-20 10:59:38  [jarFile] add jar resource: /F:/h5/longmarch/lib/paoding-rose-jade-1.0.1.jar[applicationContext]
+[INFO ] 12-20 10:59:38  [jarFile] found 1 jar files: [/F:/h5/longmarch/lib/paoding-rose-jade-1.0.1.jar[applicationContext]]
+[INFO ] 12-20 10:59:38  [findFiles] found 2 classes folders or rosed jar files : [/F:/h5/longmarch/bin/[**], /F:/h5/longmarch/lib/paoding-rose-jade-1.0.1.jar[applicationContext]]
+[INFO ] 12-20 10:59:38  [jade] found 1 jade urls: [file:/F:/h5/longmarch/bin/]
+[INFO ] 12-20 10:59:38  [jade] call 'jade/find'
+[INFO ] 12-20 10:59:38  [jade] found 5 beanDefinition from 'file:/F:/h5/longmarch/bin/'
+[INFO ] 12-20 10:59:38  [jade] exits
+[INFO ] 12-20 10:59:38  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18078bef: defining beans [dataSource,logerDataSource,jade.daoProcessor,jada.dataAccessProvider,jade.expressSQLInterpreter,defaultLogoutHandler,disposeHandler,loginAfterHandler,adminHandler,broadcastHandler,loginHandler,mallHandler,playerHandler,questHandler,adminService,broadcastService,chickenQuestService,mallService,playerService,context,serverTimer,threadService,timerService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.game.dao.ConsumeDAO,com.game.dao.FamilyDAO,com.game.dao.LoginLogDAO,com.game.dao.PlayerDAO,com.game.dao.ServerDataDAO]; root of factory hierarchy
+[INFO ] 12-20 10:59:39  using rowMapper org.springframework.jdbc.core.SingleColumnRowMapper@5a5338df for com.game.dao.ServerDataDAO#queryServerData
+[INFO ] 12-20 10:59:45  using rowMapper net.paoding.rose.jade.core.BeanPropertyRowMapper@1d5a243d for com.game.dao.PlayerDAO#queryPlayerRank
+[INFO ] 12-20 10:59:45  using rowMapper net.paoding.rose.jade.core.BeanPropertyRowMapper@65e966f7 for com.game.dao.FamilyDAO#queryFamilyRank
+[INFO ] 12-20 10:59:50  begin init server...
+[INFO ] 12-20 10:59:50  load game config...
+[INFO ] 12-20 10:59:50  Load Config GlobalConfig
+[INFO ] 12-20 10:59:50  Load Config IntegrationMallCfg
+[INFO ] 12-20 10:59:50  Load Config LevelCfg
+[INFO ] 12-20 10:59:50  Load Config MapCfg
+[INFO ] 12-20 10:59:50  Load Config QuestionCfg
+[INFO ] 12-20 10:59:50  Load Config SelfTestCfg
+[INFO ] 12-20 10:59:50  Load Config SelfTestDescriptionCfg
+[INFO ] 12-20 10:59:50  Load Config SelfTestResultCfg
+[INFO ] 12-20 10:59:50  load spring cfg...
+[INFO ] 12-20 10:59:50  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@ed9d034: startup date [Thu Dec 20 10:59:50 CST 2018]; root of context hierarchy
+[INFO ] 12-20 10:59:50  Loading XML bean definitions from file [F:\h5\longmarch\config\application.xml]
+[INFO ] 12-20 10:59:50  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO ] 12-20 10:59:50  [jade] starting ...
+[INFO ] 12-20 10:59:50  [findFiles] start to found classes folders or rosed jar files by scope:null
+[INFO ] 12-20 10:59:50  [classesFolder] start to found available classes folders ...
+[INFO ] 12-20 10:59:50  [classesFolder] found 1 classes folders: [/F:/h5/longmarch/bin/[**]]
+[INFO ] 12-20 10:59:50  [jarFile] start to found available jar files for rose to scanning...
+[INFO ] 12-20 10:59:50  [jarFile] add jar resource: /F:/h5/longmarch/lib/paoding-rose-jade-1.0.1.jar[applicationContext]
+[INFO ] 12-20 10:59:50  [jarFile] found 1 jar files: [/F:/h5/longmarch/lib/paoding-rose-jade-1.0.1.jar[applicationContext]]
+[INFO ] 12-20 10:59:50  [findFiles] found 2 classes folders or rosed jar files : [/F:/h5/longmarch/bin/[**], /F:/h5/longmarch/lib/paoding-rose-jade-1.0.1.jar[applicationContext]]
+[INFO ] 12-20 10:59:50  [jade] found 1 jade urls: [file:/F:/h5/longmarch/bin/]
+[INFO ] 12-20 10:59:50  [jade] call 'jade/find'
+[INFO ] 12-20 10:59:50  [jade] found 5 beanDefinition from 'file:/F:/h5/longmarch/bin/'
+[INFO ] 12-20 10:59:50  [jade] exits
+[INFO ] 12-20 10:59:50  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18078bef: defining beans [dataSource,logerDataSource,jade.daoProcessor,jada.dataAccessProvider,jade.expressSQLInterpreter,defaultLogoutHandler,disposeHandler,loginAfterHandler,adminHandler,broadcastHandler,loginHandler,mallHandler,playerHandler,questHandler,adminService,broadcastService,chickenQuestService,mallService,playerService,context,serverTimer,threadService,timerService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.game.dao.ConsumeDAO,com.game.dao.FamilyDAO,com.game.dao.LoginLogDAO,com.game.dao.PlayerDAO,com.game.dao.ServerDataDAO]; root of factory hierarchy
+[INFO ] 12-20 10:59:52  using rowMapper org.springframework.jdbc.core.SingleColumnRowMapper@5a5338df for com.game.dao.ServerDataDAO#queryServerData
+[INFO ] 12-20 11:00:06  begin init server...
+[INFO ] 12-20 11:00:06  load game config...
+[INFO ] 12-20 11:00:06  Load Config GlobalConfig
+[INFO ] 12-20 11:00:06  Load Config IntegrationMallCfg
+[INFO ] 12-20 11:00:06  Load Config LevelCfg
+[INFO ] 12-20 11:00:06  Load Config MapCfg
+[INFO ] 12-20 11:00:06  Load Config QuestionCfg
+[INFO ] 12-20 11:00:06  Load Config SelfTestCfg
+[INFO ] 12-20 11:00:06  Load Config SelfTestDescriptionCfg
+[INFO ] 12-20 11:00:06  Load Config SelfTestResultCfg
+[INFO ] 12-20 11:00:06  load spring cfg...
+[INFO ] 12-20 11:00:06  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@ed9d034: startup date [Thu Dec 20 11:00:06 CST 2018]; root of context hierarchy
+[INFO ] 12-20 11:00:06  Loading XML bean definitions from file [F:\h5\longmarch\config\application.xml]
+[INFO ] 12-20 11:00:06  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO ] 12-20 11:00:06  [jade] starting ...
+[INFO ] 12-20 11:00:06  [findFiles] start to found classes folders or rosed jar files by scope:null
+[INFO ] 12-20 11:00:06  [classesFolder] start to found available classes folders ...
+[INFO ] 12-20 11:00:06  [classesFolder] found 1 classes folders: [/F:/h5/longmarch/bin/[**]]
+[INFO ] 12-20 11:00:06  [jarFile] start to found available jar files for rose to scanning...
+[INFO ] 12-20 11:00:06  [jarFile] add jar resource: /F:/h5/longmarch/lib/paoding-rose-jade-1.0.1.jar[applicationContext]
+[INFO ] 12-20 11:00:06  [jarFile] found 1 jar files: [/F:/h5/longmarch/lib/paoding-rose-jade-1.0.1.jar[applicationContext]]
+[INFO ] 12-20 11:00:06  [findFiles] found 2 classes folders or rosed jar files : [/F:/h5/longmarch/bin/[**], /F:/h5/longmarch/lib/paoding-rose-jade-1.0.1.jar[applicationContext]]
+[INFO ] 12-20 11:00:06  [jade] found 1 jade urls: [file:/F:/h5/longmarch/bin/]
+[INFO ] 12-20 11:00:06  [jade] call 'jade/find'
+[INFO ] 12-20 11:00:06  [jade] found 5 beanDefinition from 'file:/F:/h5/longmarch/bin/'
+[INFO ] 12-20 11:00:06  [jade] exits
+[INFO ] 12-20 11:00:06  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18078bef: defining beans [dataSource,logerDataSource,jade.daoProcessor,jada.dataAccessProvider,jade.expressSQLInterpreter,defaultLogoutHandler,disposeHandler,loginAfterHandler,adminHandler,broadcastHandler,loginHandler,mallHandler,playerHandler,questHandler,adminService,broadcastService,chickenQuestService,mallService,playerService,context,serverTimer,threadService,timerService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.game.dao.ConsumeDAO,com.game.dao.FamilyDAO,com.game.dao.LoginLogDAO,com.game.dao.PlayerDAO,com.game.dao.ServerDataDAO]; root of factory hierarchy
+[INFO ] 12-20 11:00:34  using rowMapper org.springframework.jdbc.core.SingleColumnRowMapper@5a5338df for com.game.dao.ServerDataDAO#queryServerData
+[INFO ] 12-20 11:00:37  begin init server...
+[INFO ] 12-20 11:00:37  load game config...
+[INFO ] 12-20 11:00:37  Load Config GlobalConfig
+[INFO ] 12-20 11:00:37  Load Config IntegrationMallCfg
+[INFO ] 12-20 11:00:37  Load Config LevelCfg
+[INFO ] 12-20 11:00:37  Load Config MapCfg
+[INFO ] 12-20 11:00:37  Load Config QuestionCfg
+[INFO ] 12-20 11:00:37  Load Config SelfTestCfg
+[INFO ] 12-20 11:00:37  Load Config SelfTestDescriptionCfg
+[INFO ] 12-20 11:00:37  Load Config SelfTestResultCfg
+[INFO ] 12-20 11:00:37  load spring cfg...
+[INFO ] 12-20 11:00:37  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@ed9d034: startup date [Thu Dec 20 11:00:37 CST 2018]; root of context hierarchy
+[INFO ] 12-20 11:00:37  Loading XML bean definitions from file [F:\h5\longmarch\config\application.xml]
+[INFO ] 12-20 11:00:37  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO ] 12-20 11:00:37  [jade] starting ...
+[INFO ] 12-20 11:00:37  [findFiles] start to found classes folders or rosed jar files by scope:null
+[INFO ] 12-20 11:00:37  [classesFolder] start to found available classes folders ...
+[INFO ] 12-20 11:00:37  [classesFolder] found 1 classes folders: [/F:/h5/longmarch/bin/[**]]
+[INFO ] 12-20 11:00:37  [jarFile] start to found available jar files for rose to scanning...
+[INFO ] 12-20 11:00:37  [jarFile] add jar resource: /F:/h5/longmarch/lib/paoding-rose-jade-1.0.1.jar[applicationContext]
+[INFO ] 12-20 11:00:38  [jarFile] found 1 jar files: [/F:/h5/longmarch/lib/paoding-rose-jade-1.0.1.jar[applicationContext]]
+[INFO ] 12-20 11:00:38  [findFiles] found 2 classes folders or rosed jar files : [/F:/h5/longmarch/bin/[**], /F:/h5/longmarch/lib/paoding-rose-jade-1.0.1.jar[applicationContext]]
+[INFO ] 12-20 11:00:38  [jade] found 1 jade urls: [file:/F:/h5/longmarch/bin/]
+[INFO ] 12-20 11:00:38  [jade] call 'jade/find'
+[INFO ] 12-20 11:00:38  [jade] found 5 beanDefinition from 'file:/F:/h5/longmarch/bin/'
+[INFO ] 12-20 11:00:38  [jade] exits
+[INFO ] 12-20 11:00:38  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18078bef: defining beans [dataSource,logerDataSource,jade.daoProcessor,jada.dataAccessProvider,jade.expressSQLInterpreter,defaultLogoutHandler,disposeHandler,loginAfterHandler,adminHandler,broadcastHandler,loginHandler,mallHandler,playerHandler,questHandler,adminService,broadcastService,chickenQuestService,mallService,playerService,context,serverTimer,threadService,timerService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.game.dao.ConsumeDAO,com.game.dao.FamilyDAO,com.game.dao.LoginLogDAO,com.game.dao.PlayerDAO,com.game.dao.ServerDataDAO]; root of factory hierarchy
+[INFO ] 12-20 11:00:39  using rowMapper org.springframework.jdbc.core.SingleColumnRowMapper@5a5338df for com.game.dao.ServerDataDAO#queryServerData
+[INFO ] 12-20 11:00:43  using rowMapper net.paoding.rose.jade.core.BeanPropertyRowMapper@646a5476 for com.game.dao.PlayerDAO#queryPlayerRank
+[INFO ] 12-20 11:00:43  using rowMapper net.paoding.rose.jade.core.BeanPropertyRowMapper@49915b58 for com.game.dao.FamilyDAO#queryFamilyRank
+[INFO ] 12-20 14:07:02  begin init server...
+[INFO ] 12-20 14:07:02  load game config...
+[INFO ] 12-20 14:07:02  Load Config GlobalConfig
+[INFO ] 12-20 14:07:02  Load Config IntegrationMallCfg
+[INFO ] 12-20 14:07:02  Load Config LevelCfg
+[INFO ] 12-20 14:07:02  Load Config MapCfg
+[INFO ] 12-20 14:07:02  Load Config QuestionCfg
+[INFO ] 12-20 14:07:02  Load Config SelfTestCfg
+[INFO ] 12-20 14:07:02  Load Config SelfTestDescriptionCfg
+[INFO ] 12-20 14:07:02  Load Config SelfTestResultCfg
+[INFO ] 12-20 14:07:02  load spring cfg...
+[INFO ] 12-20 14:07:02  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@ed9d034: startup date [Thu Dec 20 14:07:02 CST 2018]; root of context hierarchy
+[INFO ] 12-20 14:07:02  Loading XML bean definitions from file [F:\h5\longmarch\config\application.xml]
+[INFO ] 12-20 14:07:02  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO ] 12-20 14:07:02  [jade] starting ...
+[INFO ] 12-20 14:07:02  [findFiles] start to found classes folders or rosed jar files by scope:null
+[INFO ] 12-20 14:07:02  [classesFolder] start to found available classes folders ...
+[INFO ] 12-20 14:07:02  [classesFolder] found 1 classes folders: [/F:/h5/longmarch/bin/[**]]
+[INFO ] 12-20 14:07:02  [jarFile] start to found available jar files for rose to scanning...
+[INFO ] 12-20 14:07:02  [jarFile] add jar resource: /F:/h5/longmarch/lib/paoding-rose-jade-1.0.1.jar[applicationContext]
+[INFO ] 12-20 14:07:02  [jarFile] found 1 jar files: [/F:/h5/longmarch/lib/paoding-rose-jade-1.0.1.jar[applicationContext]]
+[INFO ] 12-20 14:07:02  [findFiles] found 2 classes folders or rosed jar files : [/F:/h5/longmarch/bin/[**], /F:/h5/longmarch/lib/paoding-rose-jade-1.0.1.jar[applicationContext]]
+[INFO ] 12-20 14:07:02  [jade] found 1 jade urls: [file:/F:/h5/longmarch/bin/]
+[INFO ] 12-20 14:07:02  [jade] call 'jade/find'
+[INFO ] 12-20 14:07:03  [jade] found 5 beanDefinition from 'file:/F:/h5/longmarch/bin/'
+[INFO ] 12-20 14:07:03  [jade] exits
+[INFO ] 12-20 14:07:03  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18078bef: defining beans [dataSource,logerDataSource,jade.daoProcessor,jada.dataAccessProvider,jade.expressSQLInterpreter,defaultLogoutHandler,disposeHandler,loginAfterHandler,adminHandler,broadcastHandler,loginHandler,mallHandler,playerHandler,questHandler,adminService,broadcastService,chickenQuestService,mallService,playerService,context,serverTimer,threadService,timerService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.game.dao.ConsumeDAO,com.game.dao.FamilyDAO,com.game.dao.LoginLogDAO,com.game.dao.PlayerDAO,com.game.dao.ServerDataDAO]; root of factory hierarchy
+[INFO ] 12-20 14:07:05  using rowMapper org.springframework.jdbc.core.SingleColumnRowMapper@5a5338df for com.game.dao.ServerDataDAO#queryServerData
+[INFO ] 12-20 14:07:05  using rowMapper net.paoding.rose.jade.core.BeanPropertyRowMapper@467ddb0d for com.game.dao.PlayerDAO#queryPlayerRank
+[INFO ] 12-20 14:07:05  using rowMapper net.paoding.rose.jade.core.BeanPropertyRowMapper@75f49abf for com.game.dao.FamilyDAO#queryFamilyRank

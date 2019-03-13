@@ -1,0 +1,13 @@
+package com.game.domain.bag;
+
+import com.game.domain.player.Player;
+
+/**
+ * Created by lucky on 2019/3/13.
+ * 跑步机
+ */
+public class RunItem extends Item{
+    @Override
+    public void useItem(Player player) {
+    }
+}

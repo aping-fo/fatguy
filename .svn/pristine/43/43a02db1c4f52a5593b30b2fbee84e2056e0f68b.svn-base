@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1</id>
+	<during>10800</during>
+	<effect></effect>
+</config>
+<config>
+	<id>2</id>
+	<during>10800</during>
+	<effect></effect>
+</config>
+<config>
+	<id>3</id>
+	<during>10800</during>
+	<effect></effect>
+</config>
+<config>
+	<id>4</id>
+	<during>10800</during>
+	<effect></effect>
+</config>
+</root>

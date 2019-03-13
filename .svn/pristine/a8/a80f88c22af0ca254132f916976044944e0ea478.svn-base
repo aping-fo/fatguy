@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1</id>
+	<eventType>1</eventType>
+</config>
+<config>
+	<id>2</id>
+	<eventType>2</eventType>
+</config>
+<config>
+	<id>3</id>
+	<eventType>3</eventType>
+</config>
+<config>
+	<id>4</id>
+	<eventType>4</eventType>
+</config>
+<config>
+	<id>5</id>
+	<eventType>5</eventType>
+</config>
+</root>

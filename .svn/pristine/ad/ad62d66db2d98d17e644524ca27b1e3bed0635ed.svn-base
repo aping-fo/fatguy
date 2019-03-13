@@ -1,0 +1,66 @@
+package com.game.domain.player;
+
+/**
+ * Created by lucky on 2019/3/12.
+ */
+public class PlayerData {
+    private int step;
+
+    private int totalStep;
+    private String iconUrl;
+
+    private int todayTransStep;
+
+    //群ID
+    private String groupId;
+
+    private long signTime;
+
+    public int getStep() {
+        return step;
+    }
+
+    public void setStep(int step) {
+        this.step = step;
+    }
+
+    public int getTotalStep() {
+        return totalStep;
+    }
+
+    public void setTotalStep(int totalStep) {
+        this.totalStep = totalStep;
+    }
+
+    public String getIconUrl() {
+        return iconUrl;
+    }
+
+    public void setIconUrl(String iconUrl) {
+        this.iconUrl = iconUrl;
+    }
+
+    public int getTodayTransStep() {
+        return todayTransStep;
+    }
+
+    public void setTodayTransStep(int todayTransStep) {
+        this.todayTransStep = todayTransStep;
+    }
+
+    public String getGroupId() {
+        return groupId;
+    }
+
+    public void setGroupId(String groupId) {
+        this.groupId = groupId;
+    }
+
+    public long getSignTime() {
+        return signTime;
+    }
+
+    public void setSignTime(long signTime) {
+        this.signTime = signTime;
+    }
+}

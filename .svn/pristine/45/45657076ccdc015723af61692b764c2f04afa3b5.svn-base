@@ -1,0 +1,43 @@
+
+#系统参数，一般不用改动
+#日志根目录
+logpath=logs
+#开服时间yyyy-MM-dd HH:mm:ss
+startUpDate=2018-3-21 00:00:00
+#系统线程数
+serverThread=12
+#系统定时器
+timerThread=4
+#清除缓存线程数
+disposeThread=5
+#日志记录线程数
+loggerThread=2
+#批量插入日志量
+loggerBatchCount = 700
+#下线多少秒清除缓存
+delayDispose=240
+#定时器线程数
+scheduledThread=8
+dataPath=data
+
+
+#=============================启动参数，根据实际改动
+#服务器端口号
+port=10010
+#本机ip
+host=127.0.0.1
+#服务器id
+serverId=10
+#https安全端口
+httpsPort=8445
+#安全证书密码
+httpsPwd=9TfOfE4P
+#http端口
+httpPort = 8129
+# 认证key
+wxAppid = wx2b9c4e24426c97be
+# 认证秘钥
+wxAppSecret = c751af32cfbe6397f571dd2eb0e7d282
+
+#协议加密
+oauthsecret = cJpSzEU0KcWybxhkKp47DSvUZTpgfEAuht72XHiL

@@ -1,0 +1,546 @@
+package com.game.service;
+
+import com.game.data.QuestionCfg;
+import com.game.domain.player.Player;
+import com.game.domain.quest.ChickenRoom;
+import com.game.domain.quest.Fighter;
+import com.game.sdk.net.Result;
+import com.game.sdk.proto.ChickenGameResultResp;
+import com.game.sdk.proto.ChickenPlayerInfoInGameResp;
+import com.game.sdk.proto.ChickenPlayingSituationResp;
+import com.game.sdk.proto.ChickenSubmitAnswerReq;
+import com.game.sdk.proto.vo.QuestVO;
+import com.game.sdk.utils.ErrorCode;
+import com.game.util.ConfigData;
+import com.game.util.RandomUtil;
+import com.game.util.TimerService;
+import com.google.common.collect.Lists;
+import jdk.nashorn.internal.runtime.Debug;
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.io.Console;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
+
+@Service
+public class ChickenQuestService extends AbstractService {
+    public static final int stepPerQuest = 5000;               //每答对一轮获得步数
+    private final Map<Integer, ChickenRoom> allRooms = new ConcurrentHashMap<>();
+    private final Map<String, Fighter> allMatchers = new ConcurrentHashMap<>();
+
+    private final AtomicInteger ROOMID_GEN = new AtomicInteger(100); //房间ID
+
+    @Autowired
+    private PlayerService playerService;
+    @Autowired
+    private TimerService timerService;
+
+    private static Logger logger = Logger.getLogger(ChickenQuestService.class);
+
+    @Override
+    public void onStart() {
+        //1M定时
+        timerService.scheduleAtFixedRate(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    doCheckRoomEnd();
+                } catch (Exception e) {
+                    logger.error("match schedule error", e);
+                }
+            }
+        }, 1, 1, TimeUnit.MINUTES);
+    }
+
+    public Result startMatch(String openId, int mode){
+        Player player = playerService.getPlayer(openId);
+        Fighter matcher = new Fighter(openId, player.getNickName(), player.getIconUrl());
+        allMatchers.put(openId, matcher);
+
+        for(ChickenRoom room : allRooms.values()){
+            if(room.isWaiting()){
+                matcher.setRoomId(room.getId());
+                room.getRoles().add(matcher);
+                return Result.valueOf(ErrorCode.OK, "ok");
+            }
+        }
+
+        return this.createRoom(openId, mode);
+    }
+
+    public Result endMatch(String openId){
+        Fighter matcher = allMatchers.get(openId);
+        ChickenRoom room = null;
+        if (matcher != null) {
+            if (matcher.getRoomId() == 0) {
+                return Result.valueOf(ErrorCode.PARAM_ERROR, "");
+            }
+            room = allRooms.get(matcher.getRoomId());
+            allMatchers.remove(openId);
+            matcher.exitFlag = true;
+        }
+        boolean isAllRobot=true;
+
+        if(room!= null &&(room.isWaiting() || room.getStatus() == ChickenRoom.RoomStatus.Ready)){
+            //等待中可以退出，游戏开始不能退出
+            for(int i = 0; i < room.getRoles().size(); i++){
+                if(room.getRoles().get(i).getOpenId().equals(openId)){
+                    room.getRoles().remove(i);
+//                    break;
+                }
+                else
+                {
+                    if(!room.getRoles().get(i).isRobot())
+                    {
+                        isAllRobot=false;
+                    }
+                }
+            }
+        }
+        if(isAllRobot)
+        {
+            room.setStatus(ChickenRoom.RoomStatus.End);
+            //清空房间
+            allRooms.remove(room.getId());
+            for (Fighter fighter : room.getRoles()) {
+                allMatchers.remove(fighter.getOpenId());
+            }
+            room.getScheduler().cancel(true);
+        }
+        return Result.valueOf(ErrorCode.OK, "ok");
+    }
+
+    public Result createRoom(String openId, int mode) {
+        Fighter matcher = allMatchers.get(openId);
+        if(matcher != null && allRooms.get(matcher.getRoomId()) != null){
+            ChickenRoom room = allRooms.get(matcher.getRoomId());
+            return Result.valueOf(ErrorCode.OK, String.valueOf(room.getId()));
+        }
+        Player player = playerService.getPlayer(openId);
+        player.setLastGameStepChange(0);
+
+        final ChickenRoom room = new ChickenRoom(ROOMID_GEN.getAndDecrement());
+        ScheduledFuture<?> scheduler = timerService.scheduleAtFixedRate(new Runnable() {
+            ChickenRoom chickenRoom = room;
+            @Override
+            public void run() {
+                //TODO
+                switch (chickenRoom.getStatus()) {
+                    case Waiting: {
+                        chickenRoom.update();
+                        if (chickenRoom.getUpdateTime() >= ChickenRoom.WaitingTime) {
+                            fillRoomWithRobot(chickenRoom);
+                            //10秒开始
+                            chickenRoom.setReady();
+                            for (Fighter fighter : chickenRoom.getRoles()) {
+                                fighter.fighting = true;
+                            }
+                        }
+                    }
+                        break;
+                    case Ready: {
+                        chickenRoom.update();
+                        if (chickenRoom.getUpdateTime() >= ChickenRoom.ReadyTime) {
+                            chickenRoom.setStatus(ChickenRoom.RoomStatus.StartQuestion);
+                        }
+                    }
+                    break;
+
+                    case StartQuestion:{
+                        Collection<Object> cfgs = ConfigData.getConfigs(QuestionCfg.class);
+                        Object[] array = cfgs.toArray();
+
+                        while (true) {
+                            int index = RandomUtil.randInt(array.length);
+                            QuestionCfg config = (QuestionCfg) array[index];
+                            boolean isOld = false;
+
+                            for (QuestVO oldVo : chickenRoom.getCurrentQuestions()) {
+                                if (oldVo.getId() == config.id) {
+                                    isOld = true;
+                                    break;
+                                }
+                            }
+
+                            if (!isOld) {
+                                QuestVO vo = new QuestVO();
+                                vo.setId(config.id);
+                                vo.setContent(config.content);
+                                vo.setAnswer(config.answerIndex);
+                                vo.setOptions(config.options);
+
+                                chickenRoom.setCurrentQuest(vo);
+                                chickenRoom.getCurrentQuestions().add(vo);
+
+                                for (Fighter fighter : chickenRoom.getRoles()) {
+                                    if (!fighter.isRobot() && fighter.fighting) {
+                                        Player player = playerService.getPlayer(fighter.getOpenId());
+                                    }
+                                }
+
+                                break;
+                            }
+                        }
+                        //改变房间状态
+                        chickenRoom.setStartAnswer();
+                    }
+                        break;
+
+                    case StartAnswer: {
+                        chickenRoom.update();
+                        if (chickenRoom.getUpdateTime() >= ChickenRoom.AnswerTime) {
+                            //统计结果，判断是否结束
+                            int correctAnswer = chickenRoom.getCurrentQuest().getAnswer();
+                            chickenRoom.setLastQuestionAnswer(correctAnswer);
+
+                            boolean isAllRobot = true;
+                            boolean isEnd = false;
+                            Fighter correctFighter = null;
+
+                            List<Fighter> correctRoles = Lists.newArrayList();
+                            List<Fighter> wrongRoles = Lists.newArrayList();
+
+                            for (Fighter fighter : chickenRoom.getRoles()) {
+                                if(fighter.fighting){
+                                    boolean isCorrect = fighter.getChooseAnswer() == correctAnswer;
+
+                                    if (isCorrect) {
+                                        correctRoles.add(fighter);
+                                        correctFighter = fighter;
+                                        if(!fighter.isRobot()){
+                                            isAllRobot = false;
+                                        }
+                                    } else {
+                                        fighter.fighting = false;
+                                        wrongRoles.add(fighter);
+                                    }
+                                    if(!fighter.isRobot())
+                                    {
+                                        Player p=playerService.getPlayer(fighter.getOpenId());
+                                        if(p != null)
+                                        {
+                                            p.setLastGameWin(isCorrect);
+                                        }
+                                    }
+                                }
+                            }
+                            if (chickenRoom.getCurrentQuestions().size()>=5 || isAllRobot) {
+                                isEnd = true;
+                            }
+
+                            if(isEnd){
+                                chickenRoom.setStatus(ChickenRoom.RoomStatus.End);
+                                //清空房间
+                                allRooms.remove(chickenRoom.getId());
+                                for (Fighter fighter : chickenRoom.getRoles()) {
+                                    allMatchers.remove(fighter.getOpenId());
+                                }
+                                chickenRoom.getScheduler().cancel(true);
+                                for (Fighter fighter : correctRoles) {
+                                    if(!fighter.isRobot())
+                                    {
+                                        playerService.roundResult(fighter.getOpenId(), stepPerQuest);
+                                    }
+                                }
+                            }else{
+                                chickenRoom.setStatus(ChickenRoom.RoomStatus.StartQuestion);
+                            }
+                        }
+                    }
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+        }, ChickenRoom.UpdateTimerInterval, ChickenRoom.UpdateTimerInterval, TimeUnit.SECONDS);
+
+        room.setMode(mode);
+        room.setScheduler(scheduler);
+
+        matcher = new Fighter(player.getOpenId(), player.getNickName(), player.getIconUrl());
+        matcher.setRoomId(room.getId());
+
+        if(mode == 2){
+            fillRoomWithRobot(room);
+            matcher.fighting=true;
+            for (Fighter fighter : room.getRoles()) {
+                fighter.fighting = true;
+            }
+//            room.setStatus(ChickenRoom.RoomStatus.StartQuestion);
+            room.setReady();
+        }
+
+        allMatchers.put(openId, matcher);
+        room.getRoles().add(matcher);
+        allRooms.put(room.getId(), room);
+        return Result.valueOf(ErrorCode.OK, String.valueOf(room.getId()));
+    }
+
+    public Result joinRoom(String openId, int roomId) {
+        Fighter matcher = allMatchers.get(openId);
+        if(matcher != null && allRooms.get(matcher.getRoomId()) != null){
+            ChickenRoom room = allRooms.get(matcher.getRoomId());
+            return Result.valueOf(ErrorCode.OK, String.valueOf(room.getId()));
+        }
+
+        Player player = playerService.getPlayer(openId);
+        player.setLastGameStepChange(0);
+
+        matcher = new Fighter(player.getOpenId(), player.getNickName(), player.getIconUrl());
+
+        ChickenRoom room = allRooms.get(roomId);
+        if (room == null) {
+            return Result.valueOf(ErrorCode.CHICKEN_NO_ROOM_ID, String.valueOf(roomId));
+        }
+
+        if (room.isStart() || room.isEnd()) {
+            return Result.valueOf(ErrorCode.CHICKEN_GAME_ALREADY_START, String.valueOf(room.getId()));
+        }
+
+        allMatchers.put(openId, matcher);
+        room.getRoles().add(matcher);
+        matcher.setRoomId(roomId);
+        return Result.valueOf(ErrorCode.OK, String.valueOf(room.getId()));
+    }
+
+    public Result exitRoom(String openId){
+        Fighter fight = allMatchers.get(openId);
+
+        if (fight == null || allRooms.get(fight.getRoomId()) == null) {
+            return Result.valueOf(ErrorCode.OK, "OK");
+        }
+
+        ChickenRoom room = allRooms.get(fight.getRoomId());
+        boolean isAllRobot=true;
+        if(room.isWaiting() || room.getStatus() == ChickenRoom.RoomStatus.Ready){
+            //等待中可以退出，游戏开始不能退出
+            for(int i = 0; i < room.getRoles().size(); i++){
+                if(room.getRoles().get(i).getOpenId().equals(openId)){
+                    room.getRoles().remove(i);
+//                    break;
+                }
+                else
+                {
+                    if(!room.getRoles().get(i).isRobot())
+                    {
+                        isAllRobot=false;
+                    }
+                }
+            }
+            fight.setRoomId(0);
+            allMatchers.remove(fight.getOpenId());
+        }
+        if(isAllRobot)
+        {
+            room.setStatus(ChickenRoom.RoomStatus.End);
+            //清空房间
+            allRooms.remove(room.getId());
+            for (Fighter fighter : room.getRoles()) {
+                allMatchers.remove(fighter.getOpenId());
+            }
+            room.getScheduler().cancel(true);
+        }
+
+        return Result.valueOf(ErrorCode.OK, "OK");
+    }
+
+    public Result getRoomStatus(String openId) {
+        Fighter fight = allMatchers.get(openId);
+        ChickenPlayerInfoInGameResp resp = new ChickenPlayerInfoInGameResp();
+
+        if (fight == null || allRooms.get(fight.getRoomId()) == null) {
+            resp.setRoomStatus(-1);
+            return Result.valueOf(ErrorCode.OK, resp);
+        }
+
+        ChickenRoom room = allRooms.get(fight.getRoomId());
+        for (Fighter fighter : room.getRoles()) {
+            resp.getPlayers().add(fighter.toProto());
+        }
+        resp.setRoomTime((int)room.getUpdateTime());
+        if(room.getStatus() == ChickenRoom.RoomStatus.Ready)
+        {
+            resp.setRoomStatus(2);
+        }
+        else
+        {
+            resp.setRoomStatus(room.isStart() && room.getCurrentQuest() != null ? 1 : 0);
+        }
+        return Result.valueOf(ErrorCode.OK, resp);
+    }
+
+    public Result getQuestion(String openId) {
+        Fighter fight = allMatchers.get(openId);
+
+        if (fight == null || allRooms.get(fight.getRoomId()) == null) {
+            return Result.valueOf(ErrorCode.CHICKEN_PLAYER_NOT_IN_GAME, "error");
+        }
+
+        ChickenRoom room = allRooms.get(fight.getRoomId());
+        if (!room.isStart()) {
+            return Result.valueOf(ErrorCode.CHICKEN_GAME_NOT_START, "error");
+        }
+
+        QuestVO vo = room.getCurrentQuest();
+
+        return Result.valueOf(ErrorCode.OK, vo);
+    }
+
+    public Result getPlayingSituation(String openId) {
+        Fighter fight = allMatchers.get(openId);
+
+        if (fight == null || allRooms.get(fight.getRoomId()) == null) {
+            return Result.valueOf(ErrorCode.CHICKEN_PLAYER_NOT_IN_GAME, "error");
+        }
+
+        ChickenRoom room = allRooms.get(fight.getRoomId());
+        if (!room.isStart()) {
+            return Result.valueOf(ErrorCode.CHICKEN_GAME_NOT_START, "error");
+        }
+
+        ChickenPlayingSituationResp resp = new ChickenPlayingSituationResp();
+        for (Fighter fighter : room.getRoles()) {
+            if(fighter.fighting) {
+                resp.getFighterAnswers().add(fighter.toAnswerProto());
+            }
+        }
+        resp.setRoomTime((int)room.getUpdateTime());
+        resp.setCurrentQuestionId(room.getCurrentQuest() != null ? room.getCurrentQuest().getId() : 0);
+
+        return Result.valueOf(ErrorCode.OK, resp);
+    }
+
+    public Result submitAnswer(String openId, ChickenSubmitAnswerReq req) {
+        Fighter fight = allMatchers.get(req.getAnswerOpenId());
+
+        if (fight == null || allRooms.get(fight.getRoomId()) == null) {
+            return Result.valueOf(ErrorCode.CHICKEN_PLAYER_NOT_IN_GAME, "error");
+        }
+
+        ChickenRoom room = allRooms.get(fight.getRoomId());
+        if (!room.isStart()) {
+            return Result.valueOf(ErrorCode.CHICKEN_GAME_NOT_START, "error");
+        }
+
+        if (room.getCurrentQuest().getId() != req.getQuestionId()) {
+            return Result.valueOf(ErrorCode.CHICKEN_ANSWER_NOT_CURRENT_QUESTION, req.getQuestionId());
+        }
+
+        fight.setChooseAnswer(req.getAnswer());
+        Player player = playerService.getPlayer(openId);
+        player.setLastQuestionAnswer(req.getAnswer());
+
+        return Result.valueOf(ErrorCode.OK, "ok");
+    }
+
+    public Result chickenGetResult(String openId) {
+        ChickenGameResultResp resp = new ChickenGameResultResp();
+        Fighter fight = allMatchers.get(openId);
+
+        if (fight == null || allRooms.get(fight.getRoomId()) == null) {
+            Player player = playerService.getPlayer(openId);
+
+            boolean isCorrect=player.isLastGameWin();
+            resp.setCorrect(isCorrect);
+            resp.setEnd(true);
+            resp.setStep(player.getLastGameStepChange());
+            if(isCorrect)
+            {
+                resp.setAnswer(player.getLastQuestionAnswer());
+            }
+            else
+            {
+                resp.setAnswer(player.getLastQuestionAnswer() == 0?1:0);
+            }
+
+        }else{
+            ChickenRoom room = allRooms.get(fight.getRoomId());
+
+            if(!room.isStart() && !room.isEnd())
+            {
+                return Result.valueOf(ErrorCode.CHICKEN_GAME_NOT_TIME_TO_GET_RESULT, resp);
+            }
+            resp.setCorrect(fight.fighting);
+            resp.setEnd(room.isEnd());
+            resp.setAnswer(room.getLastQuestionAnswer());
+            resp.setStep(fight.getScore());
+
+            for (Fighter fighter : room.getRoles()) {
+                if (fighter.fighting) {
+                    resp.getFighter().add(fighter.toAnswerProto());
+                }
+            }
+        }
+        return Result.valueOf(ErrorCode.OK, resp);
+    }
+
+    private void fillRoomWithRobot(ChickenRoom room){
+        int need=20-room.getRoles().size();
+        if(need>0)
+        {
+            for(int i = 0; i < need-1; i++){
+                String openId = UUID.randomUUID().toString();
+                String nickName = openId.substring(0, 4);
+
+                Fighter matcher = new Fighter(openId, nickName, "");
+                matcher.setRobot(true);
+                matcher.setRoomId(room.getId());
+
+                room.getRoles().add(matcher);
+                allMatchers.put(openId, matcher);
+            }
+        }
+
+    }
+
+    private void doCheckRoomEnd() {
+        for (ChickenRoom room : allRooms.values()) {
+            if (room.isEnd()) {
+                //TODO 超时处理
+//                allRooms.remove(room.getId());
+//                for (Fighter fighter : room.getRoles()) {
+//                    Fighter fighter1 = allMatchers.remove(fighter.getOpenId());
+//                    if (fighter1 != null) {
+//                        //答题结束
+//                        fighter1.fighting = false;
+//                        //统计结算
+//                        this.checkForScore(fighter1.getOpenId(), room);
+//                    }
+//                }
+            }
+        }
+    }
+    public Result SetGameStart(String openId)
+    {
+        Fighter fight = allMatchers.get(openId);
+
+        if (fight == null || allRooms.get(fight.getRoomId()) == null) {
+            return Result.valueOf(ErrorCode.CHICKEN_PLAYER_NOT_IN_GAME, "error");
+        }
+
+        ChickenRoom room = allRooms.get(fight.getRoomId());
+        if (room.isStart()) {
+            return Result.valueOf(ErrorCode.CHICKEN_GAME_ALREADY_START, "error");
+        }
+
+        if(room.getRoles().size() < 2) {
+            return Result.valueOf(ErrorCode.CHICKEN_GAME_NOT_ENOUGH_PLAYER, "error");
+        }
+
+            room.setReady();
+            for (Fighter fighter : room.getRoles()) {
+                fighter.fighting = true;
+            }
+        return Result.valueOf(ErrorCode.OK,"");
+    }
+
+}

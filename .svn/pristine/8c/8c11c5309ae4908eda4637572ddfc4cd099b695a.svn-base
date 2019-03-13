@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1</id>
+	<memberCount>1</memberCount>
+	<addPercent>1</addPercent>
+	<level>1</level>
+</config>
+<config>
+	<id>2</id>
+	<memberCount>10</memberCount>
+	<addPercent>1.25</addPercent>
+	<level>2</level>
+</config>
+<config>
+	<id>3</id>
+	<memberCount>20</memberCount>
+	<addPercent>1.5</addPercent>
+	<level>3</level>
+</config>
+<config>
+	<id>4</id>
+	<memberCount>30</memberCount>
+	<addPercent>1.75</addPercent>
+	<level>4</level>
+</config>
+<config>
+	<id>5</id>
+	<memberCount>40</memberCount>
+	<addPercent>2</addPercent>
+	<level>5</level>
+</config>
+<config>
+	<id>6</id>
+	<memberCount>50</memberCount>
+	<addPercent>2.25</addPercent>
+	<level>6</level>
+</config>
+<config>
+	<id>7</id>
+	<memberCount>60</memberCount>
+	<addPercent>2.5</addPercent>
+	<level>7</level>
+</config>
+<config>
+	<id>8</id>
+	<memberCount>70</memberCount>
+	<addPercent>2.75</addPercent>
+	<level>8</level>
+</config>
+<config>
+	<id>9</id>
+	<memberCount>80</memberCount>
+	<addPercent>3</addPercent>
+	<level>9</level>
+</config>
+</root>

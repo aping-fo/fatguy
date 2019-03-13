@@ -1,0 +1,281 @@
+package com.game.domain.group;
+
+import com.game.SysConfig;
+import com.game.data.GroupCfg;
+import com.game.data.GroupRecordCfg;
+import com.game.sdk.proto.vo.*;
+import com.game.util.ConfigData;
+import com.game.util.JsonUtils;
+import com.game.util.RandomUtil;
+import com.google.common.collect.Lists;
+
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.function.Supplier;
+
+/**
+ * Created by lucky on 2018/11/8.
+ */
+public class Group {
+    private String id = "";
+    private String ownerId = "";
+    private String iconUrl = "";
+    private int totalStep;
+    private Map<String, GroupMember> members = new ConcurrentHashMap<>();
+    private String memberJson;
+    private String name;
+
+    //记录
+    private List<GroupRecord> records = Lists.newArrayListWithCapacity(20);
+    private String recordJson;
+
+    public static final int MAX_RECORD_SIZE = 20;
+    public static final int RECORD_TYPE_ADDSTEP = 1;
+    public static final int RECORD_TYPE_ENCOURAGE = 2;
+    public static final int RECORD_TYPE_WARN = 3;
+    public static final int RECORD_TYPE_MEMBER_ENTER = 4;
+    public static final int RECORD_TYPE_MEMBER_LEAVE = 5;
+
+    //加成百分比
+    private float addPercent;
+
+    public static final ThreadLocal<ReentrantLock> lockGet = ThreadLocal.withInitial(new Supplier() {
+        @Override
+        public Object get() {
+            return new ReentrantLock();
+        }
+    });
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(String ownerId) {
+        this.ownerId = ownerId;
+    }
+
+    public String getIconUrl() {
+        return iconUrl;
+    }
+
+    public void setIconUrl(String iconUrl) {
+        this.iconUrl = iconUrl;
+    }
+
+    public int getTotalStep() {
+        return totalStep;
+    }
+
+    public void setTotalStep(int totalStep) {
+        this.totalStep = totalStep;
+    }
+
+    public String getMemberJson() {
+        return memberJson;
+    }
+
+    public void setMemberJson(String memberJson) {
+        this.memberJson = memberJson;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public Map<String, GroupMember> getMembers() {
+        return members;
+    }
+
+    public void setMembers(Map<String, GroupMember> members) {
+        this.members = members;
+    }
+
+    public void setRecords(List<GroupRecord> records) {
+        this.records = records;
+    }
+
+    public List<GroupRecord> getRecords() {
+        return records;
+    }
+
+    public void setRecordJson(String recordJson) {
+        this.recordJson = recordJson;
+    }
+
+    public String getRecordJson() {
+        return recordJson;
+    }
+
+    public void add(GroupMember member, int step) {
+        ReentrantLock lock = lockGet.get();
+        try {
+            lock.lock();
+
+            members.put(member.getOpenid(), member);
+            memberJson = JsonUtils.map2String(members);
+
+            step = (step - this.totalStep) / members.size();
+
+            this.totalStep += step;
+            member.setStep(member.getStep() + step);
+
+            this.updateAddPercent();
+        } finally {
+            lock.unlock();
+        }
+    }
+
+    public void remove(String openid) {
+        ReentrantLock lock = lockGet.get();
+        try {
+            lock.lock();
+
+            members.remove(openid);
+            memberJson = JsonUtils.map2String(members);
+            this.updateAddPercent();
+        } finally {
+            lock.unlock();
+        }
+    }
+
+    public void addStep(String openId, int step) {
+        GroupMember member = members.getOrDefault(openId, null);
+        if (member == null) {
+            return;
+        }
+
+        step = (int) (step * addPercent) / members.size();
+
+        this.totalStep += step;
+        member.setStep(member.getStep() + step);
+    }
+
+    public void addRecord(int eventType, String playerName, String param) {
+        GroupRecord record = new GroupRecord();
+        List<GroupRecordCfg> cfgs = ConfigData.groupRecordsMap.get(eventType);
+        int id = cfgs.get(RandomUtil.randInt(cfgs.size())).id;
+
+        record.setId(id);
+        record.setPlayerName(playerName);
+        record.setParam(param);
+
+        records.add(record);
+        if (records.size() > MAX_RECORD_SIZE) {
+            records.remove(0);
+        }
+
+        recordJson = JsonUtils.object2String(records);
+    }
+
+    public GroupVO toProto() {
+        GroupVO vo = new GroupVO();
+        vo.setCreatorOpenId(ownerId);
+        vo.setName(name);
+        vo.setId(id);
+        if(!iconUrl.contains("https")) {
+            vo.setIconUrl("https://" + SysConfig.sdkServer + ":" + SysConfig.sdkServerPort + "/" + iconUrl);
+        }else {
+            vo.setIconUrl(iconUrl);
+        }
+        vo.setStep(totalStep);
+        vo.setLevel(this.getLevel());
+
+        for (GroupMember member : members.values()) {
+            GroupMemberVO memberVO = new GroupMemberVO();
+            memberVO.setAvatarUrl(member.getIconUrl());
+            memberVO.setStep(member.getStep());
+            memberVO.setNickName(member.getName());
+            memberVO.setOpenId(member.getOpenid());
+
+            vo.getGroupMembers().add(memberVO);
+        }
+        return vo;
+    }
+
+    public GroupSimpleVO toSimpleProto() {
+        GroupSimpleVO vo = new GroupSimpleVO();
+        vo.setId(id);
+        vo.setName(name);
+        if(!iconUrl.contains("https")) {
+            vo.setIconUrl("https://" + SysConfig.sdkServer + ":" + SysConfig.sdkServerPort + "/" + iconUrl);
+        }else {
+            vo.setIconUrl(iconUrl);
+        }
+        vo.setStep(totalStep);
+        return vo;
+    }
+
+    public List<GroupRecordVO> toRecordsProto() {
+        List<GroupRecordVO> ret = Lists.newArrayListWithCapacity(records.size());
+
+        for (GroupRecord record : records) {
+            GroupRecordVO recordVO = new GroupRecordVO();
+
+            recordVO.setId(record.getId());
+            recordVO.setPlayerName(record.getPlayerName());
+            recordVO.setParam(record.getParam());
+
+            ret.add(recordVO);
+        }
+
+        return ret;
+    }
+
+    public GroupRankVO toRankProto() {
+        GroupRankVO vo = new GroupRankVO();
+        vo.setId(id);
+        vo.setName(name);
+        if(!iconUrl.contains("https")) {
+            vo.setIconUrl("https://" + SysConfig.sdkServer + ":" + SysConfig.sdkServerPort + "/" + iconUrl);
+        }else {
+            vo.setIconUrl(iconUrl);
+        }
+        vo.setStep(totalStep);
+        vo.setLevel(this.getLevel());
+
+        return vo;
+    }
+
+    public void updateAddPercent() {
+        int membersCount = members.size();
+        Collection<Object> cfgs = ConfigData.getConfigs(GroupCfg.class);
+        for (Object obj : cfgs) {
+            GroupCfg cfg = (GroupCfg) obj;
+            if (membersCount >= cfg.memberCount) {
+                addPercent = cfg.addPercent;
+            } else {
+                break;
+            }
+        }
+    }
+
+    private int getLevel() {
+        int membersCount = members.size();
+        int level = 0;
+        Collection<Object> cfgs = ConfigData.getConfigs(GroupCfg.class);
+        for (Object obj : cfgs) {
+            GroupCfg cfg = (GroupCfg) obj;
+            if (membersCount >= cfg.memberCount) {
+                level = cfg.level;
+            } else {
+                break;
+            }
+        }
+        return level;
+    }
+}
