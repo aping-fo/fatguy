@@ -4,7 +4,7 @@
 	
 	<appender name="stdout" class="org.apache.log4j.ConsoleAppender">
 		<layout class="org.apache.log4j.PatternLayout">
-			<param name="ConversionPattern" value="[%-5p] %d{MM-dd HH:mm:ss}  %m%n" />
+			<param name="ConversionPattern" value="[%-5p] %c{1} %d{MM-dd HH:mm:ss}  %m%n" />
 		</layout>
 	</appender>
 
@@ -12,7 +12,7 @@
 		<param name="File" value="${logpath}/debug/debug.log" />
 		<param name="Encoding" value="UTF-8"/>
 		<layout class="org.apache.log4j.PatternLayout">
-			<param name="ConversionPattern" value="[%-5p] %d{MM-dd HH:mm:ss}  %m%n" />
+			<param name="ConversionPattern" value="[%-5p] %c{1} %d{MM-dd HH:mm:ss}  %m%n" />
 		</layout>
 		<filter class="org.apache.log4j.varia.LevelRangeFilter">
 			<param name="LevelMax" value="INFO" />
