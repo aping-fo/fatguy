@@ -62,24 +62,17 @@ public class Item {
      * @param player
      * @return 错误码信息
      */
-    public String useItem(Player player) {
-
-        return ErrorCode.OK;
-    }
-
-    public boolean checkUsdGuradItem(Player player) {
-        Map<Integer, Buffer> effectMap = player.getPlayerDataObject().getBufferMap();
-        Buffer buffer = effectMap.get(ItemConsts.GUARD_ITEM_ID);
-
-        int passTime = (int) (System.currentTimeMillis() / 1000) - buffer.getCdStart();
-
-        if (passTime >= buffer.getCdtime()) {
-            effectMap.remove(buffer.getId());
-            return false;
+    public boolean useItem(Player player) {
+        try {
+            player.SelfLock.lock();
+            ToolCfg config = getConf();
+            player.getPlayerDataObject().addBuffer(config);
+            return true;
+        } finally {
+            player.SelfLock.unlock();
         }
-
-        return true;
     }
+
 
     public ToolCfg getConf() {
         ToolCfg config = ConfigData.getConfig(ToolCfg.class, configId);

@@ -1,11 +1,10 @@
 package com.game.sdk.web;
 
-import com.game.SysConfig;
 import com.game.sdk.annotation.WebHandler;
-import com.game.sdk.net.Exector;
+import com.game.sdk.net.Executor;
 import com.game.sdk.net.Result;
 import com.game.sdk.utils.ErrorCode;
-import com.game.sdk.utils.ExectorManager;
+import com.game.sdk.utils.ExecutorManager;
 import com.game.util.JsonUtils;
 import org.apache.log4j.Logger;
 
@@ -56,18 +55,18 @@ public class AdminHandlerServlet extends SdkServlet {
 //                return;
 //            }
 
-            Exector exector = ExectorManager.getExector(cmd);
-            if (exector == null) {
+            Executor executor = ExecutorManager.getExector(cmd);
+            if (executor == null) {
                 render(resp, 0, ErrorCode.EXEC_ERROR);
                 return;
             }
 
             Result result;
-            if (exector.paramType == null) { //无请求参数的处理
-                result = (Result) exector.invoke(openid);
+            if (executor.paramType == null) { //无请求参数的处理
+                result = (Result) executor.invoke(openid);
             } else {
-                Object paramObject = JsonUtils.string2Object(data, exector.paramType);
-                result = (Result) exector.invoke(openid, paramObject);
+                Object paramObject = JsonUtils.string2Object(data, executor.paramType);
+                result = (Result) executor.invoke(openid, paramObject);
             }
 
             if (logger.isInfoEnabled()) {

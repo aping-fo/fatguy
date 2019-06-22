@@ -34,17 +34,18 @@ public class Bag {
             }
         }
 
-        idGen = new AtomicInteger(maxId);
+        idGen = new AtomicInteger(maxId + 1);
     }
 
 
     public void addItem(ToolCfg cfg, int count) {
-        //判断是否可叠加，有冷却时间的应该不可叠加
+        //判断是否可叠加
         boolean flag = cfg.maxStack != 0;
         if (flag) {
             Item item = bag.get(cfg.id);
             if (item == null) {
                 item = createItem(cfg);
+                item.setCount(count);
                 bag.put(item.getId(), item);
             }
             item.setCount(item.getCount() + count);
@@ -58,32 +59,12 @@ public class Bag {
     }
 
     private Item createItem(ToolCfg cfg) {
-        Item item;
-        switch (cfg.id) {
-            case ItemConsts.RUN_ITEM_ID:
-                item = new RunItem();
-                break;
-            case ItemConsts.FAT_WATER_ITEM_ID:
-                item = new FatWaterItem();
-                break;
-            case ItemConsts.GUARD_ITEM_TYPE:
-                item = new GuardItem();
-                break;
-            case ItemConsts.SOFA_ITEM_ID:
-                item = new SofaLyItem();
-                break;
-            case ItemConsts.TREASURE_ITEM_ID:
-                item = new TreasureItem();
-                break;
-            default:
-                item = new Item();
-                break;
-        }
+        Item item = new Item();
 
         item.setCreateTime(System.currentTimeMillis());
         item.setConfigId(cfg.id);
         item.setCount(0);
-        item.setId(idGen.incrementAndGet());
+        item.setId(cfg.id);
 
         return item;
     }

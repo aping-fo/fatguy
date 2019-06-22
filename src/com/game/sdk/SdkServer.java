@@ -2,7 +2,7 @@ package com.game.sdk;
 
 import com.game.SysConfig;
 import com.game.sdk.annotation.WebHandler;
-import com.game.sdk.utils.ExectorManager;
+import com.game.sdk.utils.ExecutorManager;
 import com.game.sdk.web.SdkServlet;
 import com.game.util.ClassUtil;
 import org.apache.log4j.Logger;
@@ -78,7 +78,7 @@ public class SdkServer {
                 }
             }
 
-            ExectorManager.loadExec();
+            ExecutorManager.loadExec();
             // 启动服务器
             server.start();
             logger.warn("server start on " + SysConfig.httpsPort);

@@ -37,10 +37,10 @@ public class ServerTimer {
      * 参数2 是service的名字，类名的首字母小写 参数3是方法名，该方法不带参数的
      */
     private void handleInit() {
+        // 凌晨22点30分执行
+        timers.add(new TimerObject("30 22 * * * *", "luckdrawService", "doLuckdraw"));
         // 凌晨0点执行
-        timers.add(new TimerObject("0 0 * * * *", "playerService", "schedule"));
-        //timers.add(new TimerObject("0 * * * * *", "masterMatchService", "schedule"));
-
+        timers.add(new TimerObject("1 0 * * * *", "playerService", "doRankReward"));
         updateTimeStr();
     }
 
@@ -85,7 +85,7 @@ public class ServerTimer {
                             }
                         }
                     } catch (Exception e) {
-
+                        e.printStackTrace();
                     }
                 }
             }

@@ -1,7 +1,10 @@
 package com.game;
 
 
+import com.game.event.StartHandler;
 import com.game.sdk.SdkServer;
+import com.game.sdk.websocket.WSServer;
+import com.game.service.ServerDataService;
 import com.game.util.BeanManager;
 import com.game.util.ConfigData;
 import com.game.util.GameData;
@@ -28,9 +31,21 @@ public class Start {
             GameData.loadConfigData();
             ConfigData.init();
             logger.info("load spring cfg...");
+            Runtime.getRuntime().addShutdownHook(new Thread() {
+                @Override
+                public void run() {
+                    ServerDataService bean = BeanManager.getBean(ServerDataService.class);
+                    if (bean != null) {
+                        logger.info("begin to save global data");
+                        bean.saveServerData();
+                        logger.info("end to save global data");
+                    }
+                }
+            });
             ApplicationContext ctx = new FileSystemXmlApplicationContext("config/application.xml");
             BeanManager.onStart(ctx);
-            SdkServer.start();
+            StartHandler.start();
+            WSServer.start();
         } catch (Exception e) {
             e.printStackTrace();
             System.exit(-1);

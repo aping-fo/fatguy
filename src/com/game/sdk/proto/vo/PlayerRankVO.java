@@ -7,7 +7,9 @@ public class PlayerRankVO {
     private String openId;
     private String nickName;
     private String avatarUrl;
-    private int step;
+    private int stealTimes;
+    private int rank;
+    private boolean award;
 
     public String getOpenId() {
         return openId;
@@ -25,19 +27,35 @@ public class PlayerRankVO {
         this.nickName = nickName;
     }
 
-    public int getStep() {
-        return step;
-    }
-
-    public void setStep(int step) {
-        this.step = step;
-    }
-
     public String getAvatarUrl() {
         return avatarUrl;
     }
 
     public void setAvatarUrl(String avatarUrl) {
         this.avatarUrl = avatarUrl;
+    }
+
+    public int getStealTimes() {
+        return stealTimes;
+    }
+
+    public void setStealTimes(int stealTimes) {
+        this.stealTimes = stealTimes;
+    }
+
+    public int getRank() {
+        return rank;
+    }
+
+    public void setRank(int rank) {
+        this.rank = rank;
+    }
+
+    public boolean isAward() {
+        return award;
+    }
+
+    public void setAward(boolean award) {
+        this.award = award;
     }
 }

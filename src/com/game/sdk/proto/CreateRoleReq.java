@@ -4,8 +4,9 @@ package com.game.sdk.proto;
  * Created by lucky on 2018/10/11.
  */
 public class CreateRoleReq {
-    private String iconUrl;
     private String nickName;
+    private String avatarUrl;
+
     public String getNickName() {
         return nickName;
     }
@@ -14,10 +15,11 @@ public class CreateRoleReq {
         this.nickName = nickName;
     }
 
-    public String getIconUrl() {
-        return iconUrl;
+    public String getAvatarUrl() {
+        return avatarUrl;
     }
-    public void setIconUrl(String iconUrl) {
-        this.iconUrl = iconUrl;
+
+    public void setAvatarUrl(String avatarUrl) {
+        this.avatarUrl = avatarUrl;
     }
 }

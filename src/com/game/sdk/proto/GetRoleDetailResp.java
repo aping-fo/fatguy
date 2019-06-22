@@ -1,12 +1,26 @@
 package com.game.sdk.proto;
 
+import com.game.sdk.proto.vo.BufferVO;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class GetRoleDetailResp {
     private String openId;
     private String nickName;
-    private String iconUrl;
-    private int level;
-    private float calorie;
-    private float step;
+    private String avatarUrl;
+    private int stealTimes;
+    private float ticket;
+
+    private List<BufferVO> buffs = new ArrayList<>();
+
+    public List<BufferVO> getBuffs() {
+        return buffs;
+    }
+
+    public void setBuffs(List<BufferVO> buffs) {
+        this.buffs = buffs;
+    }
 
     public String getOpenId() {
         return openId;
@@ -24,35 +38,27 @@ public class GetRoleDetailResp {
         this.nickName = nickName;
     }
 
-    public String getIconUrl() {
-        return iconUrl;
+    public String getAvatarUrl() {
+        return avatarUrl;
     }
 
-    public void setIconUrl(String iconUrl) {
-        this.iconUrl = iconUrl;
+    public void setAvatarUrl(String avatarUrl) {
+        this.avatarUrl = avatarUrl;
     }
 
-    public int getLevel() {
-        return level;
+    public int getStealTimes() {
+        return stealTimes;
     }
 
-    public void setLevel(int level) {
-        this.level = level;
+    public void setStealTimes(int stealTimes) {
+        this.stealTimes = stealTimes;
     }
 
-    public float getCalorie() {
-        return calorie;
+    public float getTicket() {
+        return ticket;
     }
 
-    public void setCalorie(float calorie) {
-        this.calorie = calorie;
-    }
-
-    public float getStep() {
-        return step;
-    }
-
-    public void setStep(float step) {
-        this.step = step;
+    public void setTicket(float ticket) {
+        this.ticket = ticket;
     }
 }

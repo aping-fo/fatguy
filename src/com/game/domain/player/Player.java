@@ -1,26 +1,38 @@
 package com.game.domain.player;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.game.sdk.proto.vo.PlayerRankVO;
+
+import java.util.concurrent.locks.ReentrantLock;
+
 public class Player {
+    /**
+     * 玩家锁
+     */
+    @JsonIgnore
+    public final ReentrantLock SelfLock = new ReentrantLock();
+
     private String openId;
     private String nickName;
-    private int level;
+    private String avatarUrl;
     //创建时间
     private long createTime;
+
+    //偷取次数
+    private int stealTimes;
+
     //登录时间
     private long loginTime;
-    //卡路里
-    private float calorie;
-
     private String playerData;
 
     private PlayerData playerDataObject = new PlayerData();
 
-    public float getCalorie() {
-        return calorie;
+    public int getStealTimes() {
+        return stealTimes;
     }
 
-    public void setCalorie(float calorie) {
-        this.calorie = calorie;
+    public void setStealTimes(int stealTimes) {
+        this.stealTimes = stealTimes;
     }
 
     public String getPlayerData() {
@@ -72,13 +84,21 @@ public class Player {
         this.nickName = nickName;
     }
 
-    public int getLevel() {
-        return level;
+    public String getAvatarUrl() {
+        return avatarUrl;
     }
 
-    public void setLevel(int level) {
-        this.level = level;
+    public void setAvatarUrl(String avatarUrl) {
+        this.avatarUrl = avatarUrl;
     }
 
+    public PlayerRank toPlayerRank(){
+        PlayerRank rank = new PlayerRank();
+        rank.setOpenId(openId);
+        rank.setNickName(nickName);
+        rank.setAvatarUrl(avatarUrl);
+        rank.setStealTimes(stealTimes);
 
+        return rank;
+    }
 }

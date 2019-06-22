@@ -36,7 +36,12 @@ public class TimeUtil {
     });
 
     public static final String FORMAT_STR = "yyyy-MM-dd HH:mm:ss";
-    public static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern(FORMAT_STR);
+    public static final DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(FORMAT_STR);
+    public static final SimpleDateFormat dateFormatter = new SimpleDateFormat(FORMAT_STR);
+
+    public static final String TIME_FORMAT_STR = "HH:mm:ss";
+    public static final SimpleDateFormat timeFormatter = new SimpleDateFormat(TIME_FORMAT_STR);
+
 
     /**
      * 获得两个时间相差的分钟数

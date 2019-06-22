@@ -6,6 +6,7 @@ package com.game.sdk.utils;
 public class ErrorCode {
     //成功
     public static final String OK = "200";
+
     //服务器内部错误
     public static final String SERVER_INTERNAL_ERROR = "500";
 
@@ -20,57 +21,18 @@ public class ErrorCode {
 
     //角色不存在
     public static final String ROLE_NOT_EXIST = "504";
+    //版本错误
+    public static final String VERSION_ERROR = "505";
+    //赠送达到上限
+    public static final String GIVE_LIMIT = "507";
 
-    //角色不在游戏
-    public static final String ROLE_NOT_IN_GAME = "505";
-    //房间不存在
-    public static final String ROOM_NOT_EXIST = "506";
+    //已经是好友
+    public static final String FRIEND_ALREADY_IS = "600";
+    //不是好友
+    public static final String NOT_FRIEND = "601";
 
-    //机器人不存在
-    public static final String ROBOT_NOT_EXIST_IN_GAME = "507";
-
-    //该角色不是答题
-    public static final String ROLE_NOT_ANSWER_QUESTION = "508";
-
-    //房间游戏已经没空位
-    public static final String ROOM_NO_POSITION = "509";
-
-    //对手已经下线
-    public static final String OPPONENT_OFFLINE = "510";
-
-    //历史题库记录为空
-    public static final String Hitory_Question_Empty = "600";
-
-    //已经有家庭群，不能创建
-    public static final String GROUP_EXIST = "700";
-
-    //没有家庭群
-    public static final String GROUP_NOT_EXIST = "701";
-
-    //不是群主
-    public static final String GROUP_NOT_CREATOR = "702";
-    //群人数达到最大
-    public static final String GROUP_MAX_SIZE = "703";
-    //群人数只剩1人
-    public static final String GROUP_MEMBER_ONLY_ONE = "704";
-
-    //没有该房间
-    public static final String CHICKEN_NO_ROOM_ID = "800";
-    //房游戏已经开始
-    public static final String CHICKEN_GAME_ALREADY_START = "801";
-    //玩家所在房间游戏没开始
-    public static final String CHICKEN_GAME_NOT_START = "802";
-    //玩家不在游戏
-    public static final String CHICKEN_PLAYER_NOT_IN_GAME = "803";
-
-    //答题不是当前题目
-    public static final String CHICKEN_ANSWER_NOT_CURRENT_QUESTION = "804";
-
-    //玩家所在房间游戏答题时间还没结束
-    public static final String CHICKEN_GAME_NOT_TIME_TO_GET_RESULT = "805";
-
-    //比赛人数不足
-    public static final String CHICKEN_GAME_NOT_ENOUGH_PLAYER = "807";
+    //邮件或附件不存在
+    public static final String MAIL_OR_ATTACHMENT_NOT_EXIST = "700";
 
     //健康币不足
     public static final String MALL_STEP_NOT_ENOUGH = "900";
@@ -83,13 +45,38 @@ public class ErrorCode {
     //重复签到
     public static final String REPEAT_CHECK_IN = "1000";
 
-
-
     ////道具相关
     public static final String ITEM_NOT_EXIST = "1500";
     //保护罩中
     public static final String ITEM_GUARDING = "1501";
+    //BOX 不存在
+    public static final String BOX_NOT_EXIST = "1502";
+    //未到领奖时间
+    public static final String BOX_CANNOT_REWARD = "1503";
+    //有宝箱正在开启
+    public static final String BOX_ALREADY_REWARD = "1504";
+    //宝箱还没打开
+    public static final String BOX_NOT_OPEN = "1505";
+    //有宝箱正在开启
+    public static final String BOX_ALREADY_OPEN = "1506";
+    //宝箱不能打开
+    public static final String BOX_CANT_OPEN = "1507";
+    //道具不足
+    public static final String ITEM_NOT_ENOUGH = "1510";
 
+    //奖劵不足
+    public static final String TICKET_NOT_ENOUGH = "1600";
+    public static final String LUCK_DRAW_TIME = "1601";
 
+    //任务不存在
+    public static final String TASK_NOT_EXIST = "1700";
+    //任务没完成
+    public static final String TASK_UNFINISH = "1701";
+    //任务已经完成
+    public static final String TASK_FINISHED = "1702";
+    //任务已经领奖关闭
+    public static final String TASK_CLOSE = "1703";
+    //任务没达到要求
+    public static final String TASK_DONT_REACH_REQUIRE = "1704";
 
 }

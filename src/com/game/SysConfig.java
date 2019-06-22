@@ -34,6 +34,8 @@ public class SysConfig {
     public static String wxAppSecret;
     public static String wxAccessToken;
 
+    public static String version;
+
     public static void init() throws Exception {
         Properties properties = new Properties();
         try (FileInputStream fis = new FileInputStream(new File("config/sys.properties"))) {
@@ -65,6 +67,8 @@ public class SysConfig {
             openDate = dataFormat.parse(startUpDate);
 
             dataPath = properties.getProperty("dataPath");
+            version = properties.getProperty("version");
+
             System.setProperty("dataPath", dataPath);
 
             updateOpenDays();

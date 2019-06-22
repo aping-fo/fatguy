@@ -18,7 +18,7 @@ public class BagHandler {
 
     @Command(cmd = Cmd.USE_ITEM, description = "使用道具")
     public Result useItem(String openId, UseItemReq req) throws Exception {
-        Result result = bagService.useItem(openId, req.getItemId(), req.getCount());
+        Result result = bagService.useItem(openId, req.getItemId(), req.getCount(),req.getOpenid());
         return result;
     }
 

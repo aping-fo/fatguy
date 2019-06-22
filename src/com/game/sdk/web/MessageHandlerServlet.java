@@ -2,11 +2,11 @@ package com.game.sdk.web;
 
 import com.game.SysConfig;
 import com.game.sdk.annotation.WebHandler;
-import com.game.sdk.net.Exector;
+import com.game.sdk.net.Executor;
 import com.game.sdk.net.Result;
 import com.game.sdk.utils.EncoderHandler;
 import com.game.sdk.utils.ErrorCode;
-import com.game.sdk.utils.ExectorManager;
+import com.game.sdk.utils.ExecutorManager;
 import com.game.util.JsonUtils;
 import org.apache.log4j.Logger;
 
@@ -14,14 +14,13 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.net.URLDecoder;
 import java.nio.charset.Charset;
 import java.util.Base64;
 
 /**
  * Created by lucky on 2018/2/28.
  */
-@WebHandler(url = "/longmarch", description = "红军长征")
+@WebHandler(url = "/fatguy", description = "幸运胖子")
 public class MessageHandlerServlet extends SdkServlet {
     private static Logger logger = Logger.getLogger(MessageHandlerServlet.class);
 
@@ -59,18 +58,18 @@ public class MessageHandlerServlet extends SdkServlet {
                 return;
             }
 
-            Exector exector = ExectorManager.getExector(cmd);
-            if (exector == null) {
+            Executor executor = ExecutorManager.getExector(cmd);
+            if (executor == null) {
                 render(resp, 0, ErrorCode.EXEC_ERROR);
                 return;
             }
 
             Result result;
-            if (exector.paramType == null) { //无请求参数的处理
-                result = (Result) exector.invoke(openId);
+            if (executor.paramType == null) { //无请求参数的处理
+                result = (Result) executor.invoke(openId);
             } else {
-                Object paramObject = JsonUtils.string2Object(data, exector.paramType);
-                result = (Result) exector.invoke(openId, paramObject);
+                Object paramObject = JsonUtils.string2Object(data, executor.paramType);
+                result = (Result) executor.invoke(openId, paramObject);
             }
 
             if (logger.isInfoEnabled()) {
