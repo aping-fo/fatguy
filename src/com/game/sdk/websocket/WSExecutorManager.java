@@ -105,6 +105,9 @@ public class WSExecutorManager {
 
     public static void exec(final Session session, String proto) {
         try {
+            if (logger.isInfoEnabled()) {
+                logger.info("proto = " + proto);
+            }
             Map<String, Object> map = JsonUtils.string2Map(proto, String.class, Object.class);
             int cmd = (int) map.get("cmd"); // 指令
             String sign = (String) map.get("s"); // 签名
@@ -124,6 +127,10 @@ public class WSExecutorManager {
 
             //data = URLDecoder.decode(data, "UTF-8");
             final String data = new String(Base64.getDecoder().decode(dataReq), Charset.forName("UTF-8"));
+
+            if (logger.isInfoEnabled()) {
+                logger.info("decoder, [data]= " + dataReq + ",[s] = " + sign + ",[openId] = " + openId + ",[cmd] = " + cmd);
+            }
             String md5Str = SysConfig.oauthsecret + "&" + data;
             String mySign = EncoderHandler.md5(md5Str);
             if (!sign.equals(mySign)) {
